@@ -1,0 +1,3427 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from https://divinehealingworld.com/animal-communication.php by HTTrack Website Copier/3.x [XR&CO], Wed, 25 Nov 2026 08:05:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Divinehealingworld
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com/"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com/"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --purple: #382342;
+            --dark-purple: #24142e;
+            --pink: #b61491;
+            --text: #302632;
+            --muted: #817782;
+            --border: #ebe7ec;
+            --light: #faf8fb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            color: var(--text);
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .top-bar {
+            height: 29px;
+            background: var(--pink);
+            color: #fff;
+            padding: 0 5.5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 10px;
+        }
+
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .top-bar-item i {
+            font-size: 11px;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            height: 78px;
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            z-index: 1000;
+        }
+
+        .header-container {
+            width: 89%;
+            max-width: 1440px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            min-width: 235px;
+        }
+
+        .logo-symbol {
+            width: 43px;
+            height: 43px;
+            position: relative;
+        }
+
+        .logo-symbol img {
+            width: 50px;
+            height: -10px;
+            object-fit: contain;
+        }
+
+        .logo-content h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 1;
+            color: var(--purple);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-content p {
+            font-size: 10px;
+            color: #77707b;
+            margin-top: 4px;
+            letter-spacing: .35px;
+        }
+
+
+        /* NAVIGATION */
+
+        .navigation {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 34px;
+        }
+
+        .nav-link {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-size: 12px;
+            color: #302932;
+            transition: color .25s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 19px;
+            width: 0;
+            height: 2px;
+            background: var(--purple);
+            transition: width .3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--purple);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .shop-link {
+            gap: 6px;
+        }
+
+        .shop-link i {
+            font-size: 8px;
+        }
+
+
+        /* SHOP DROPDOWN */
+
+        .shop-dropdown {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .shop-menu {
+            display: none;
+            list-style: none;
+            padding: 8px 0;
+            margin: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 230px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            box-shadow: 0 10px 28px rgba(36,20,46,.12);
+            z-index: 9999;
+        }
+
+        .shop-dropdown:hover .shop-menu {
+            display: block;
+        }
+
+        .shop-dropdown:hover .shop-link i {
+            transform: rotate(180deg);
+        }
+
+        .shop-link i {
+            transition: .25s ease;
+        }
+
+        .shop-menu li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 15px;
+            color: #333;
+            font-size: 13px;
+            transition: .2s ease;
+        }
+
+        .shop-menu li a:hover {
+            background: #faf5fb;
+            color: var(--pink);
+        }
+
+        .shop-menu li a i {
+            width: 17px;
+            color: var(--purple);
+            font-size: 12px;
+        }
+
+
+        /* HEADER ACTIONS */
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .header-icon {
+            border: 0;
+            background: transparent;
+            color: #302632;
+            font-size: 17px;
+            width: 20px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .header-icon:hover {
+            color: var(--purple);
+        }
+
+        .badge-icon span {
+            position: absolute;
+            top: -5px;
+            right: -8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--purple);
+            color: #fff;
+            font-size: 8px;
+            font-weight: 600;
+        }
+
+
+        /* MOBILE */
+
+        .mobile-menu-button {
+            display: none;
+            border: 0;
+            background: transparent;
+            font-size: 19px;
+            color: var(--purple);
+            cursor: pointer;
+        }
+
+        .mobile-navigation {
+            display: none;
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 10px 5%;
+            position: relative;
+            z-index: 999;
+            box-shadow: 0 8px 20px rgba(0,0,0,.06);
+        }
+
+        .mobile-navigation.show {
+            display: block;
+        }
+
+        .mobile-navigation a {
+            display: block;
+            padding: 13px 5px;
+            border-bottom: 1px solid #f0edf1;
+            font-size: 13px;
+        }
+
+        .mobile-shop {
+            border-bottom: 1px solid #f0edf1;
+        }
+
+        .mobile-shop-toggle {
+            width: 100%;
+            padding: 13px 5px;
+            border: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: inherit;
+            font-size: 13px;
+            color: #302932;
+            cursor: pointer;
+        }
+
+        .mobile-shop-toggle i {
+            font-size: 10px;
+            transition: transform .25s ease;
+        }
+
+        .mobile-shop.open .mobile-shop-toggle i {
+            transform: rotate(180deg);
+        }
+
+        .mobile-shop-menu {
+            display: none;
+            padding: 0 0 5px 14px;
+        }
+
+        .mobile-shop.open .mobile-shop-menu {
+            display: block;
+        }
+
+        .mobile-shop-menu a {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 10px 5px;
+            border-bottom: 0;
+            font-size: 12px;
+            color: #625a63;
+        }
+
+        .mobile-shop-menu i {
+            width: 14px;
+            font-size: 11px;
+        }
+
+
+        /* =========================
+           SHOP PRODUCTS PAGE
+        ========================= */
+
+
+        .shop-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .shop-heading h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 34px;
+            color: var(--purple);
+            margin-bottom: 8px;
+        }
+
+        .shop-heading p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* PRODUCT CARD */
+
+        .products-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .product-card {
+            display: grid;
+            grid-template-columns: 230px 1fr;
+            gap: 25px;
+            padding: 18px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            box-shadow: 0 7px 24px rgba(36,20,46,.05);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(36,20,46,.09);
+        }
+
+        .product-image-wrap {
+            width: 230px;
+            height: 230px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #faf8fb;
+        }
+
+        .product-image-wrap img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5px 10px 5px 0;
+        }
+
+        .product-title {
+            color: var(--pink);
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+        }
+
+        .product-name {
+            font-family: "Playfair Display", serif;
+            color: var(--purple);
+            font-size: 27px;
+            font-weight: 600;
+            margin-bottom: 11px;
+        }
+
+        .product-description {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin-bottom: 18px;
+        }
+
+        .product-bottom {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .product-price {
+            color: var(--purple);
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .add-cart-btn {
+            border: 0;
+            border-radius: 8px;
+            padding: 11px 19px;
+            background: var(--purple);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: .25s ease;
+        }
+
+        .add-cart-btn:hover {
+            background: var(--pink);
+        }
+
+        .empty-products {
+            text-align: center;
+            padding: 55px 20px;
+            border: 1px dashed #ddd5df;
+            border-radius: 14px;
+            color: var(--muted);
+        }
+
+        .empty-products i {
+            font-size: 35px;
+            color: #c7bdc9;
+            margin-bottom: 12px;
+        }
+
+        .all-categories {
+            display: flex;
+            justify-content: center;
+            gap: 9px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .category-pill {
+            padding: 8px 14px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 11px;
+            color: var(--purple);
+            background: #fff;
+        }
+
+        .category-pill:hover {
+            background: #faf5fb;
+            border-color: #d9c9dc;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1000px) {
+
+            .header-container {
+                width: 92%;
+            }
+
+            .navigation {
+                gap: 20px;
+            }
+
+            .nav-link {
+                font-size: 11px;
+            }
+
+            .logo {
+                min-width: 205px;
+            }
+
+            .logo-content h1 {
+                font-size: 22px;
+            }
+
+            .header-actions {
+                gap: 13px;
+            }
+
+            .shop-page {
+                width: 92%;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .top-bar {
+                display: none;
+            }
+
+            .header {
+                height: 70px;
+            }
+
+            .navigation {
+                display: none;
+            }
+
+            .header-container {
+                width: 92%;
+            }
+
+            .header-actions {
+                gap: 13px;
+            }
+
+            .header-actions .header-icon:nth-child(1),
+            .header-actions .header-icon:nth-child(2) {
+                display: none;
+            }
+
+            .mobile-menu-button {
+                display: flex;
+            }
+
+            .logo {
+                min-width: auto;
+            }
+
+            .logo-content h1 {
+                font-size: 21px;
+            }
+
+            .logo-content p {
+                font-size: 7px;
+            }
+
+            .shop-page {
+                width: 92%;
+                padding-top: 38px;
+            }
+
+            .shop-heading h2 {
+                font-size: 28px;
+            }
+
+            .product-card {
+                grid-template-columns: 1fr;
+                gap: 17px;
+            }
+
+            .product-image-wrap {
+                width: 100%;
+                height: 260px;
+            }
+
+            .product-info {
+                padding: 0 4px 5px;
+            }
+
+            .product-name {
+                font-size: 23px;
+            }
+
+        }
+
+        @media (max-width: 420px) {
+
+            .header-container {
+                width: 90%;
+            }
+
+            .header-actions {
+                gap: 9px;
+            }
+
+            .product-image-wrap {
+                height: 230px;
+            }
+
+            .product-bottom {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<!--<div class="top-bar">
+
+    <div class="top-bar-item">
+        <i class="fa-solid fa-truck"></i>
+        <span>Free Shipping All Over India</span>
+    </div>
+
+    <div class="top-bar-item">
+        <i class="fa-regular fa-gem"></i>
+        <span>100% Natural & Authentic Crystals</span>
+    </div>
+
+    <div class="top-bar-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Easy Returns & Secure Payments</span>
+    </div>
+
+</div>-->
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <div class="header-container">
+
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-symbol">
+
+                <img
+                    src="../vectorjungal.com/files/preview/1280x977/11724061489x7dnzumlkkkdctwc1jp9s6hmcc7hkelbcywsoq1ks90ylksgcvupex8nfc0knms8robegbblqtofo2ckk2viwtbtpyhxqomm1o4i.html"
+                    alt="Divinehealingworld"
+                >
+
+            </div>
+
+            <div class="logo-content">
+
+                <h1>Divine Healing world</h1>
+
+                <p>Nature's Energy. Your Style</p>
+
+            </div>
+
+        </a>
+
+
+        <nav class="navigation">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+<a href="reiki-healing.html" class="nav-link">
+                Reiki Healing
+            
+
+            <a href="tarot-reading.html" class="nav-link">
+                Tarot Reading
+            </a>
+
+            <a href="akashic-records.html" class="nav-link">
+                Akashic Records
+            </a>
+
+            <a href="animal-communication.html" class="nav-link">
+                Animal Communication
+            </a>
+
+  <a href="psychic-mediumship.html" class="nav-link">
+                Psychic Mediumship
+            </a>                          <div class="shop-dropdown">
+
+              <!---  <a
+                    href="#"
+                    class="nav-link shop-link "
+                    aria-haspopup="true"
+                >
+                    Shop
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+
+                <ul class="shop-menu">
+                    /
+                        
+                            <li>
+
+                                <a
+                                    href="shop-category-products.php?category_id=3"
+                                >
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                    Crystals
+                                </a>
+
+                            </li>
+
+                        
+                            <li>
+
+                                <a
+                                    href="shop-category-products.php?category_id=4"
+                                >
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                    Rings
+                                </a>
+
+                            </li>
+
+                        
+                    
+                </ul>---->
+
+            </div>
+
+
+        </nav>
+
+
+        <div class="header-actions">
+         <style>
+         .session-btn
+         {
+             background:black;
+             color:#fff;
+             font-size:15px;
+             font-weight:bold;
+             border:solid 1px white;
+             padding:10px;
+             border-radius:15px;
+         }
+         
+         </style>
+            <button class="session-btn"><a href="book-your-session.html">Book Session</a></button>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     MOBILE NAV
+========================= -->
+
+<nav
+    class="mobile-navigation"
+    id="mobileNavigation"
+>
+
+    <a href="index-2.html">
+        Home
+    </a>
+
+
+    <div class="mobile-shop">
+
+        <button
+            type="button"
+            class="mobile-shop-toggle"
+            id="mobileShopToggle"
+        >
+
+            <span>
+                Shop
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </button>
+
+
+        <div
+            class="mobile-shop-menu"
+            id="mobileShopMenu"
+        >
+
+            <a href="products.html">
+
+                <i class="fa-solid fa-box"></i>
+
+                Products
+
+            </a>
+
+
+            <a href="best-sellers.html">
+
+                <i class="fa-solid fa-star"></i>
+
+                Best Sellers
+
+            </a>
+
+
+            
+                <a
+                    href="shop-category-productsd7b8.html?category_id=3"
+                >
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Crystals
+                </a>
+
+            
+                <a
+                    href="shop-category-products9738.html?category_id=4"
+                >
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Rings
+                </a>
+
+            
+        </div>
+
+    </div>
+
+
+    <a href="about.html">
+        About Us
+    </a>
+
+    <a href="#">
+        Tarot Reading
+    </a>
+
+    <a href="#">
+        Akashic Records
+    </a>
+
+    <a href="#">
+        Animal Communication
+    </a>
+
+</nav>
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<main class="shop-page">
+
+    
+
+</main>
+
+
+<script>
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const mobileNavigation =
+        document.getElementById("mobileNavigation");
+
+    const menuIcon =
+        menuButton
+            ? menuButton.querySelector("i")
+            : null;
+
+
+    if (
+        menuButton &&
+        mobileNavigation &&
+        menuIcon
+    ) {
+
+        menuButton.addEventListener("click", () => {
+
+            mobileNavigation.classList.toggle("show");
+
+            if (
+                mobileNavigation.classList.contains("show")
+            ) {
+
+                menuIcon.classList.remove("fa-bars");
+                menuIcon.classList.add("fa-xmark");
+
+            } else {
+
+                menuIcon.classList.remove("fa-xmark");
+                menuIcon.classList.add("fa-bars");
+
+            }
+
+        });
+
+    }
+
+
+    /* =========================
+       MOBILE SHOP
+    ========================= */
+
+    const mobileShopToggle =
+        document.getElementById("mobileShopToggle");
+
+    const mobileShop =
+        document.querySelector(".mobile-shop");
+
+
+    if (
+        mobileShopToggle &&
+        mobileShop
+    ) {
+
+        mobileShopToggle.addEventListener(
+            "click",
+            function () {
+
+                mobileShop.classList.toggle("open");
+
+            }
+        );
+
+    }
+
+
+    /* =========================
+       ADD TO CART
+       UI READY
+    ========================= */
+
+    document
+        .querySelectorAll(".add-cart-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const productName =
+                        this.dataset.productName || "Product";
+
+                    alert(
+                        productName +
+                        " added to cart."
+                    );
+
+                }
+            );
+
+        });
+
+
+    /* =========================
+       CLOSE MOBILE MENU
+    ========================= */
+
+    document
+        .querySelectorAll(".mobile-navigation a")
+        .forEach(link => {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    if (mobileNavigation) {
+                        mobileNavigation.classList.remove("show");
+                    }
+
+                    if (menuIcon) {
+
+                        menuIcon.classList.remove("fa-xmark");
+                        menuIcon.classList.add("fa-bars");
+
+                    }
+
+                    if (mobileShop) {
+                        mobileShop.classList.remove("open");
+                    }
+
+                }
+            );
+
+        });
+
+</script>
+
+</body>
+
+<!-- Mirrored from https://divinehealingworld.com/animal-communication.php by HTTrack Website Copier/3.x [XR&CO], Wed, 25 Nov 2026 08:05:23 GMT -->
+</html>
+
+<style>
+/* ================================
+   ANIMAL COMMUNICATION PAGE
+================================ */
+
+.animal-page {
+    --purple: #301745;
+    --purple-light: #704b83;
+    --gold: #c69b59;
+    --cream: #faf7f2;
+    --text: #51465a;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    overflow: hidden;
+}
+
+.animal-page * {
+    box-sizing: border-box;
+}
+
+.animal-page img {
+    max-width: 100%;
+    display: block;
+}
+
+.animal-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.animal-section {
+    padding: 85px 0;
+}
+
+.animal-subtitle {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.animal-heading {
+    color: var(--purple);
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.25;
+    font-family: Georgia, serif;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.animal-description {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #716777;
+}
+
+.animal-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--gold);
+    color: #301745 !important;
+    border-radius: 4px;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: .3s;
+    border: 1px solid var(--gold);
+}
+
+.animal-btn:hover {
+    background: var(--purple);
+    color: white !important;
+    border-color: var(--purple);
+    transform: translateY(-3px);
+}
+
+/* HERO */
+
+.animal-hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+        linear-gradient(90deg, rgba(35,17,48,.94), rgba(35,17,48,.72), rgba(35,17,48,.15)),
+        url('https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=2000&q=85');
+    background-size: cover;
+    background-position: center;
+}
+
+.animal-hero-content {
+    max-width: 680px;
+    padding: 90px 0;
+    position: relative;
+    z-index: 2;
+    animation: animalFadeUp 1s ease;
+}
+
+.animal-hero .animal-subtitle {
+    color: #e5c38c;
+}
+
+.animal-hero h1 {
+    font-family: Georgia, serif;
+    color: #fff;
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.12;
+    margin: 0 0 25px;
+    font-weight: 500;
+}
+
+.animal-hero h1 span {
+    color: #e5c38c;
+    font-style: italic;
+}
+
+.animal-hero p {
+    color: #eee4f1;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 580px;
+    margin-bottom: 32px;
+}
+
+/* INTRO */
+
+.animal-intro {
+    background: var(--cream);
+}
+
+.animal-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.animal-image-wrap {
+    position: relative;
+}
+
+.animal-image-wrap img {
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.animal-image-wrap:after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    border: 2px solid var(--gold);
+    right: -15px;
+    bottom: -15px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.animal-image-wrap img {
+    position: relative;
+    z-index: 1;
+}
+
+.animal-intro-content {
+    padding: 20px 0;
+}
+
+/* HIGHLIGHTS */
+
+.animal-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.animal-highlight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: calc(50% - 10px);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--purple);
+}
+
+.animal-highlight span {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eee5f1;
+    color: var(--gold);
+    font-size: 18px;
+}
+
+/* PURPOSE */
+
+.animal-purpose {
+    background: #fff;
+    text-align: center;
+}
+
+.animal-center-heading {
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.animal-purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.animal-purpose-card {
+    padding: 35px 25px;
+    background: #faf7f2;
+    border: 1px solid #eee5ed;
+    transition: .35s;
+    border-radius: 5px;
+}
+
+.animal-purpose-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(48,23,69,.09);
+    border-color: var(--gold);
+}
+
+.animal-purpose-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: var(--purple);
+    color: #e5c38c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin: 0 auto 22px;
+}
+
+.animal-purpose-card h3 {
+    color: var(--purple);
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin-bottom: 13px;
+}
+
+.animal-purpose-card p {
+    color: #796f7e;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* PROCESS */
+
+.animal-process {
+    background: var(--cream);
+}
+
+.animal-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.animal-process-card {
+    background: #fff;
+    padding: 35px 28px;
+    border-bottom: 3px solid var(--gold);
+    position: relative;
+}
+
+.animal-step {
+    font-family: Georgia, serif;
+    font-size: 44px;
+    color: #e8d9c1;
+    margin-bottom: 12px;
+}
+
+.animal-process-card h3 {
+    color: var(--purple);
+    font-size: 20px;
+    font-family: Georgia, serif;
+    margin: 0 0 15px;
+}
+
+.animal-process-card p {
+    color: #786e7d;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* IMAGE BANNER */
+
+.animal-banner {
+    padding: 110px 20px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(40,19,54,.87), rgba(40,19,54,.87)),
+        url('https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1800&q=85');
+    background-size: cover;
+    background-position: center;
+}
+
+.animal-banner h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 4vw, 46px);
+    color: white;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.3;
+}
+
+.animal-banner p {
+    color: #e8dce9;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* SESSION */
+
+.animal-session {
+    background: #fff;
+}
+
+.animal-session-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.animal-session-image img {
+    height: 480px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.animal-session-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 30px;
+}
+
+.animal-session-list li {
+    padding: 13px 0;
+    border-bottom: 1px solid #eee8ef;
+    font-size: 14px;
+    color: #665b6d;
+}
+
+.animal-session-list li:before {
+    content: "✦";
+    color: var(--gold);
+    margin-right: 12px;
+}
+
+/* FAQ */
+
+.animal-faq {
+    background: var(--cream);
+}
+
+.animal-faq-wrap {
+    max-width: 850px;
+    margin: 40px auto 0;
+}
+
+.animal-faq-item {
+    background: white;
+    margin-bottom: 13px;
+    border: 1px solid #eee5ed;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.animal-faq-question {
+    width: 100%;
+    border: 0;
+    background: white;
+    padding: 20px 22px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--purple);
+    font-family: Georgia, serif;
+    font-size: 17px;
+    cursor: pointer;
+    gap: 15px;
+}
+
+.animal-faq-question span {
+    color: var(--gold);
+    font-size: 23px;
+}
+
+.animal-faq-answer {
+    display: none;
+    padding: 0 22px 20px;
+    color: #776d7c;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.animal-faq-item.active .animal-faq-answer {
+    display: block;
+}
+
+.animal-faq-item.active .animal-faq-question span {
+    transform: rotate(45deg);
+}
+
+/* FINAL CTA */
+
+.animal-final-cta {
+    background: var(--purple);
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.animal-final-cta h2 {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 4vw, 45px);
+    margin: 0 0 18px;
+}
+
+.animal-final-cta p {
+    color: #e2d6e7;
+    max-width: 650px;
+    margin: 0 auto 28px;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+@keyframes animalFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+    .animal-intro-grid,
+    .animal-session-grid {
+        gap: 35px;
+    }
+
+    .animal-purpose-grid,
+    .animal-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 650px) {
+    .animal-container {
+        width: 90%;
+    }
+
+    .animal-section {
+        padding: 60px 0;
+    }
+
+    .animal-hero {
+        min-height: 560px;
+        background-position: 60% center;
+    }
+
+    .animal-hero-content {
+        padding: 75px 0;
+    }
+
+    .animal-hero h1 {
+        font-size: 43px;
+    }
+
+    .animal-hero p {
+        font-size: 14px;
+    }
+
+    .animal-intro-grid,
+    .animal-session-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .animal-image-wrap img {
+        height: 350px;
+    }
+
+    .animal-image-wrap:after {
+        right: -8px;
+        bottom: -8px;
+    }
+
+    .animal-purpose-grid,
+    .animal-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .animal-highlight {
+        width: 100%;
+    }
+
+    .animal-session-image img {
+        height: 350px;
+    }
+
+    .animal-banner {
+        padding: 75px 20px;
+    }
+
+    .animal-final-cta {
+        padding: 65px 20px;
+    }
+}
+</style>
+
+
+<main class="animal-page">
+
+    <!-- HERO SECTION -->
+    <section class="animal-hero">
+
+        <div class="animal-container">
+
+            <div class="animal-hero-content">
+
+                <div class="animal-subtitle">
+                    Divine Healing World
+                </div>
+
+                <h1>
+                    Animal <span>Communication</span>
+                </h1>
+
+                <p>
+                    Every animal has a story, feelings and a unique way
+                    of expressing themselves. Discover a deeper connection
+                    with your beloved pet through an intuitive animal
+                    communication session.
+                </p>
+
+                <a href="contact.html" class="animal-btn">
+                    BOOK A SESSION &nbsp; →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="animal-section animal-intro">
+
+        <div class="animal-container">
+
+            <div class="animal-intro-grid">
+
+                <div class="animal-image-wrap">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                        alt="Beautiful dog"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="animal-intro-content">
+
+                    <div class="animal-subtitle">
+                        Understand Your Pet
+                    </div>
+
+                    <h2 class="animal-heading">
+                        Listen Beyond Words,
+                        Connect Beyond Limits
+                    </h2>
+
+                    <p class="animal-description">
+                        Animals communicate in their own beautiful ways.
+                        They express themselves through emotions, behaviour,
+                        energy and body language.
+
+                        <br><br>
+
+                        Animal Communication is an intuitive approach
+                        intended to explore your pet's feelings, experiences
+                        and needs. It offers pet owners an opportunity to
+                        reflect on their relationship with their beloved
+                        companions.
+                    </p>
+
+                    <div class="animal-highlights">
+
+                        <div class="animal-highlight">
+                            <span>♡</span>
+                            Emotional Connection
+                        </div>
+
+                        <div class="animal-highlight">
+                            <span>✧</span>
+                            Intuitive Insights
+                        </div>
+
+                        <div class="animal-highlight">
+                            <span>🐾</span>
+                            Pet Understanding
+                        </div>
+
+                        <div class="animal-highlight">
+                            <span>♥</span>
+                            Deeper Bonding
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHAT CAN WE EXPLORE -->
+    <section class="animal-section animal-purpose">
+
+        <div class="animal-container">
+
+            <div class="animal-center-heading">
+
+                <div class="animal-subtitle">
+                    Explore The Connection
+                </div>
+
+                <h2 class="animal-heading">
+                    What Can We Explore During a Session?
+                </h2>
+
+                <p class="animal-description">
+                    Every pet is unique. A session can provide an
+                    opportunity to explore different aspects of your
+                    pet's experiences and relationship with you.
+                </p>
+
+            </div>
+
+
+            <div class="animal-purpose-grid">
+
+                <div class="animal-purpose-card">
+
+                    <div class="animal-purpose-icon">♡</div>
+
+                    <h3>Emotional Feelings</h3>
+
+                    <p>
+                        Explore your pet's emotional world, feelings
+                        and their connection with family members.
+                    </p>
+
+                </div>
+
+
+                <div class="animal-purpose-card">
+
+                    <div class="animal-purpose-icon">🐾</div>
+
+                    <h3>Behaviour Insights</h3>
+
+                    <p>
+                        Reflect on unusual behaviour, changes in habits
+                        and possible emotional experiences.
+                    </p>
+
+                </div>
+
+
+                <div class="animal-purpose-card">
+
+                    <div class="animal-purpose-icon">✧</div>
+
+                    <h3>Daily Experiences</h3>
+
+                    <p>
+                        Explore your pet's preferences, comfort,
+                        routines and everyday experiences.
+                    </p>
+
+                </div>
+
+
+                <div class="animal-purpose-card">
+
+                    <div class="animal-purpose-icon">♥</div>
+
+                    <h3>Bond With Owners</h3>
+
+                    <p>
+                        Explore the special bond between pets and
+                        their human companions.
+                    </p>
+
+                </div>
+
+
+                <div class="animal-purpose-card">
+
+                    <div class="animal-purpose-icon">☽</div>
+
+                    <h3>Life Changes</h3>
+
+                    <p>
+                        Explore how your pet may be experiencing
+                        changes in their surroundings or routine.
+                    </p>
+
+                </div>
+
+
+                <div class="animal-purpose-card">
+
+                    <div class="animal-purpose-icon">❀</div>
+
+                    <h3>Peace & Comfort</h3>
+
+                    <p>
+                        Create space for understanding, compassion
+                        and a more mindful relationship with your pet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section class="animal-section animal-process">
+
+        <div class="animal-container">
+
+            <div class="animal-center-heading">
+
+                <div class="animal-subtitle">
+                    The Session Journey
+                </div>
+
+                <h2 class="animal-heading">
+                    How Does Animal Communication Work?
+                </h2>
+
+                <p class="animal-description">
+                    A simple and thoughtful process designed to
+                    understand your pet's experiences.
+                </p>
+
+            </div>
+
+
+            <div class="animal-process-grid">
+
+                <div class="animal-process-card">
+
+                    <div class="animal-step">01</div>
+
+                    <h3>Share Your Pet's Details</h3>
+
+                    <p>
+                        Share your pet's name, photograph and
+                        relevant background information along
+                        with the questions you would like to explore.
+                    </p>
+
+                </div>
+
+
+                <div class="animal-process-card">
+
+                    <div class="animal-step">02</div>
+
+                    <h3>Intuitive Communication</h3>
+
+                    <p>
+                        During the session, the communicator uses
+                        an intuitive approach to explore possible
+                        impressions, feelings and experiences.
+                    </p>
+
+                </div>
+
+
+                <div class="animal-process-card">
+
+                    <div class="animal-step">03</div>
+
+                    <h3>Receive Session Insights</h3>
+
+                    <p>
+                        Your session insights are shared with you,
+                        creating an opportunity to reflect on your
+                        pet's needs and your connection.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BANNER -->
+    <section class="animal-banner">
+
+        <div class="animal-container">
+
+            <div class="animal-subtitle">
+                A Special Connection
+            </div>
+
+            <h2>
+                They May Not Speak Our Language,
+                But Their Feelings Matter.
+            </h2>
+
+            <p>
+                Every animal deserves patience, love and understanding.
+                Take a moment to explore the beautiful bond you share
+                with your beloved companion.
+            </p>
+
+            <a href="contact.html" class="animal-btn">
+                CONNECT WITH US &nbsp; →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SESSION DETAILS -->
+    <section class="animal-section animal-session">
+
+        <div class="animal-container">
+
+            <div class="animal-session-grid">
+
+                <div class="animal-session-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                        alt="Woman spending time with her dog"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <div class="animal-subtitle">
+                        Your Pet's Session
+                    </div>
+
+                    <h2 class="animal-heading">
+                        Prepare for Your Animal Communication Session
+                    </h2>
+
+                    <p class="animal-description">
+                        To make the session more meaningful, you can
+                        prepare a few details about your beloved pet
+                        before your appointment.
+                    </p>
+
+                    <ul class="animal-session-list">
+
+                        <li>A recent and clear photograph of your pet.</li>
+
+                        <li>Your pet's name and basic details.</li>
+
+                        <li>A brief background about your pet.</li>
+
+                        <li>Questions or concerns you would like to explore.</li>
+
+                        <li>A calm and open mindset during the session.</li>
+
+                    </ul>
+
+                    <a href="contact.html" class="animal-btn">
+                        ENQUIRE ABOUT A SESSION
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="animal-section animal-faq">
+
+        <div class="animal-container">
+
+            <div class="animal-center-heading">
+
+                <div class="animal-subtitle">
+                    Frequently Asked Questions
+                </div>
+
+                <h2 class="animal-heading">
+                    Everything You May Want to Know
+                </h2>
+
+            </div>
+
+
+            <div class="animal-faq-wrap">
+
+                <div class="animal-faq-item active">
+
+                    <button class="animal-faq-question">
+                        What is Animal Communication?
+                        <span>+</span>
+                    </button>
+
+                    <div class="animal-faq-answer">
+                        Animal Communication is an intuitive practice
+                        that aims to explore an animal's feelings,
+                        experiences and possible messages through
+                        impressions and intuitive connection.
+                    </div>
+
+                </div>
+
+
+                <div class="animal-faq-item">
+
+                    <button class="animal-faq-question">
+                        Can I book a session for my pet?
+                        <span>+</span>
+                    </button>
+
+                    <div class="animal-faq-answer">
+                        Yes. You can enquire about a session for your
+                        beloved pet. Share your pet's photograph and
+                        relevant details when booking.
+                    </div>
+
+                </div>
+
+
+                <div class="animal-faq-item">
+
+                    <button class="animal-faq-question">
+                        Can Animal Communication be done online?
+                        <span>+</span>
+                    </button>
+
+                    <div class="animal-faq-answer">
+                        Online sessions may be arranged. Please contact
+                        us to discuss the session format and availability.
+                    </div>
+
+                </div>
+
+
+                <div class="animal-faq-item">
+
+                    <button class="animal-faq-question">
+                        Can this replace veterinary treatment?
+                        <span>+</span>
+                    </button>
+
+                    <div class="animal-faq-answer">
+                        No. Animal Communication is not a medical
+                        diagnosis or treatment. Always consult a
+                        qualified veterinarian for your pet's health,
+                        medical conditions or behavioural concerns.
+                    </div>
+
+                </div>
+
+
+                <div class="animal-faq-item">
+
+                    <button class="animal-faq-question">
+                        How can I book a session?
+                        <span>+</span>
+                    </button>
+
+                    <div class="animal-faq-answer">
+                        You can contact Divine Healing World through
+                        the enquiry page to discuss session details
+                        and available appointments.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL CTA -->
+    <section class="animal-final-cta">
+
+        <div class="animal-container">
+
+            <div class="animal-subtitle">
+                Divine Healing World
+            </div>
+
+            <h2>
+                Celebrate the Beautiful Bond
+                You Share With Your Pet
+            </h2>
+
+            <p>
+                Take the first step towards exploring a deeper
+                understanding of your beloved animal companion.
+            </p>
+
+            <a href="contact.html" class="animal-btn">
+                BOOK YOUR SESSION &nbsp; →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script>
+// Animal Communication FAQ Accordion
+
+document.querySelectorAll('.animal-faq-question').forEach(function(button) {
+
+    button.addEventListener('click', function() {
+
+        const currentItem = this.parentElement;
+
+        document.querySelectorAll('.animal-faq-item').forEach(function(item) {
+
+            if (item !== currentItem) {
+                item.classList.remove('active');
+            }
+
+        });
+
+        currentItem.classList.toggle('active');
+
+    });
+
+});
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Divinehealingworld - Customer Reviews</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#29202f;
+    overflow-x:hidden;
+}
+
+button,
+input{
+    font-family:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-section{
+    padding:16px 0 10px;
+}
+
+.benefits-box{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+
+    background:linear-gradient(
+        120deg,
+        #faf7f5,
+        #fff,
+        #faf7f5
+    );
+
+    border-radius:10px;
+
+    box-shadow:
+        0 5px 25px rgba(45,20,55,.04);
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    overflow:hidden;
+
+    animation:fadeDown .8s ease;
+}
+
+.benefit{
+    min-height:74px;
+
+    display:flex;
+    align-items:center;
+    gap:13px;
+
+    padding:10px 25px;
+
+    border-right:1px solid #d9d2d8;
+
+    transition:.35s ease;
+}
+
+.benefit:last-child{
+    border-right:none;
+}
+
+.benefit:hover{
+    background:#fff;
+    transform:translateY(-2px);
+}
+
+.benefit-icon{
+    width:40px;
+    height:40px;
+
+    border:1.5px solid #392443;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+    transition:.4s ease;
+}
+
+.benefit:hover .benefit-icon{
+    transform:rotate(360deg);
+    background:#3b2546;
+    color:#fff;
+}
+
+.benefit h4{
+    font-size:11px;
+    font-weight:600;
+    margin-bottom:1px;
+}
+
+.benefit p{
+    font-size:8px;
+    color:#777;
+}
+
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial-section{
+    padding:18px 0 18px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:15px;
+
+    animation:fadeUp .8s ease;
+}
+
+.section-title h2{
+    font-family:'DM Serif Display',serif;
+    font-size:28px;
+    font-weight:400;
+    color:#33203e;
+}
+
+.section-title p{
+    font-size:18px;
+    color:#777;
+    margin-top:1px;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.review-card{
+    border:1px solid #e2dfe2;
+    border-radius:5px;
+
+    padding:11px 15px;
+
+    min-height:108px;
+
+    background:#fff;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    opacity:0;
+    transform:translateY(30px);
+}
+
+.review-card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.review-card:hover{
+    transform:translateY(-6px);
+    border-color:#c9b6d0;
+
+    box-shadow:
+        0 12px 30px rgba(54,30,65,.10);
+}
+
+.review-top{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.avatar{
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    background:linear-gradient(
+        135deg,
+        #eee,
+        #ddd
+    );
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.stars{
+    color:#e4a719;
+    font-size:18px;
+    letter-spacing:1px;
+    margin-bottom:3px;
+}
+
+.review-text{
+    font-size:12px;
+    color:#4d4d4d;
+    line-height:1.55;
+
+    margin-top:8px;
+}
+
+.customer{
+    margin-top:7px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.customer-location{
+    font-size:10px;
+    color:#777;
+    margin-top:1px;
+}
+
+/* =========================
+   COMMUNITY
+========================= */
+
+.community{
+    position:relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #684c72,
+            #795a83,
+            #67476e
+        );
+
+    min-height:98px;
+
+    overflow:hidden;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    margin-top:0;
+}
+
+.community-content{
+    position:relative;
+    z-index:2;
+}
+
+.community h2{
+    font-family:'DM Serif Display',serif;
+    font-weight:400;
+    font-size:25px;
+}
+
+.community p{
+    font-size:15px;
+    opacity:.85;
+    margin:2px 0 8px;
+}
+
+.subscribe{
+    display:flex;
+    width:450px;
+    height:40px;
+    margin:auto;
+
+    background:#fff;
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.subscribe:focus-within{
+    transform:scale(1.03);
+}
+
+.subscribe input{
+    flex:1;
+    min-width:0;
+
+    border:none;
+    outline:none;
+
+    padding:0 12px;
+
+    font-size:15px;
+    color:#444;
+}
+
+.subscribe button{
+    border:none;
+
+    width:100px;
+
+    background:#28192f;
+    color:#fff;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.subscribe button:hover{
+    background:#170e1b;
+}
+
+/* Floating crystals */
+
+.crystal{
+    position:absolute;
+    width:45px;
+    height:45px;
+
+    opacity:.25;
+
+    border:1px solid #fff;
+
+    transform:rotate(35deg);
+
+    animation:floatCrystal 4s ease-in-out infinite;
+}
+
+.crystal::before{
+    content:"";
+    position:absolute;
+    inset:8px;
+
+    border:1px solid #fff;
+
+    transform:rotate(45deg);
+}
+
+.crystal.one{
+    left:15%;
+    top:16px;
+}
+
+.crystal.two{
+    right:15%;
+    top:20px;
+    width:35px;
+    height:35px;
+
+    animation-delay:1s;
+}
+
+.crystal.three{
+    right:11%;
+    top:43px;
+    width:20px;
+    height:20px;
+
+    animation-delay:2s;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:
+        linear-gradient(
+            135deg,
+            #20142a,
+            #2b1936,
+            #1d1325
+        );
+
+    color:#fff;
+
+    padding:12px 0 8px;
+}
+
+.footer-container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.7fr
+        1fr
+        1fr
+        1.15fr;
+
+    gap:30px;
+}
+
+/* Logo */
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:7px;
+}
+
+.logo-icon{
+    font-size:30px;
+    line-height:1;
+}
+
+.footer-logo h2{
+    font-family:'DM Serif Display',serif;
+    font-size:23px;
+    font-weight:400;
+}
+
+.footer-logo span{
+    display:block;
+    font-size:12px;
+    color:#ddd;
+    letter-spacing:.5px;
+}
+
+.footer-about p{
+    font-size:10px;
+    line-height:1.7;
+
+    color:#d4ccd8;
+
+    max-width:280px;
+
+    margin-top:8px;
+}
+
+/* Social */
+
+.socials{
+    display:flex;
+    gap:13px;
+    margin-top:9px;
+}
+
+.socials a{
+    color:#fff;
+    text-decoration:none;
+
+    font-size:20px;
+
+    width:18px;
+    height:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    transition:.3s;
+}
+
+.socials a:hover{
+    background:#fff;
+    color:#28182f;
+    transform:translateY(-3px);
+}
+
+/* Footer columns */
+
+.footer-column h3{
+    font-size:15px;
+    font-weight:500;
+
+    margin-bottom:8px;
+}
+
+.footer-column ul{
+    list-style:none;
+}
+
+.footer-column li{
+    margin-bottom:5px;
+}
+
+.footer-column a{
+    color:#d2cbd6;
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#fff;
+    padding-left:4px;
+}
+
+/* Contact */
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#d2cbd6;
+
+    font-size:15px;
+
+    margin-bottom:7px;
+}
+
+.contact-icon{
+    width:15px;
+    text-align:center;
+    font-size:18px;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-bottom{
+    width:92%;
+    max-width:1180px;
+
+    margin:8px auto 0;
+
+    padding-top:7px;
+
+    border-top:1px solid rgba(255,255,255,.14);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    font-size:12px;
+
+    color:#bbb;
+}
+
+.footer-links{
+    display:flex;
+    gap:12px;
+}
+
+.footer-links a{
+    color:#bbb;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes floatCrystal{
+
+    0%,100%{
+        transform:
+            rotate(35deg)
+            translateY(0);
+    }
+
+    50%{
+        transform:
+            rotate(50deg)
+            translateY(-8px);
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:850px){
+
+    .benefits-box{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .benefit:nth-child(2){
+        border-right:none;
+    }
+
+    .benefit:nth-child(1),
+    .benefit:nth-child(2){
+        border-bottom:1px solid #ddd;
+    }
+
+    .reviews{
+        grid-template-columns:1fr;
+        max-width:600px;
+        margin:auto;
+    }
+
+    .review-card{
+        min-height:auto;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .benefits-section{
+        padding-top:10px;
+    }
+
+    .benefits-box{
+        width:94%;
+        grid-template-columns:1fr 1fr;
+    }
+
+    .benefit{
+        padding:10px;
+        gap:8px;
+    }
+
+    .benefit-icon{
+        width:34px;
+        height:34px;
+        font-size:14px;
+    }
+
+    .benefit h4{
+        font-size:9px;
+    }
+
+    .benefit p{
+        font-size:6.5px;
+    }
+
+    .section-title h2{
+        font-size:21px;
+    }
+
+    .section-title p{
+        font-size:8px;
+    }
+
+    .reviews{
+        width:94%;
+    }
+
+    .community{
+        min-height:105px;
+    }
+
+    .community h2{
+        font-size:18px;
+    }
+
+    .subscribe{
+        width:230px;
+    }
+
+    .crystal.one{
+        left:4%;
+    }
+
+    .crystal.two{
+        right:5%;
+    }
+
+    .crystal.three{
+        right:2%;
+    }
+
+    footer{
+        padding-top:25px;
+    }
+
+    .footer-container{
+        width:88%;
+        grid-template-columns:1fr 1fr;
+        gap:25px 15px;
+    }
+
+    .footer-about{
+        grid-column:1 / -1;
+    }
+
+    .footer-about p{
+        max-width:100%;
+    }
+
+    .footer-bottom{
+        width:88%;
+
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:8px;
+    }
+
+    .footer-links{
+        gap:8px;
+        flex-wrap:wrap;
+    }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:380px){
+
+    .benefits-box{
+        grid-template-columns:1fr;
+    }
+
+    .benefit{
+        border-right:none !important;
+        border-bottom:1px solid #ddd;
+    }
+
+    .benefit:last-child{
+        border-bottom:none;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-about{
+        grid-column:auto;
+    }
+
+    .footer-bottom{
+        font-size:6px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================
+     COMMUNITY
+===================================== -->
+
+<section class="community">
+
+
+    <div class="crystal one"></div>
+    <div class="crystal two"></div>
+    <div class="crystal three"></div>
+
+
+    <div class="community-content">
+        <br>
+        <br>
+
+        <h2>
+            Join Our Crystal Community
+        </h2>
+
+        <p>
+            Get exclusive offers, new arrivals and crystal tips straight to your inbox.
+        </p>
+
+<br>
+        <form
+            class="subscribe"
+            id="subscribeForm"
+        >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+<br>
+<br>
+<br>
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- ABOUT -->
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+
+                <div class="logo-icon">
+                    ♢
+                </div>
+
+                <div>
+
+                    <h2>
+                        Divinehealingworld
+                    </h2>
+
+                    <span>
+                        Nature's Energy. Your Style
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                At Divinehealingworld, we bring you fine natural
+                crystals and handcrafted jewellery to help you
+                connect with your inner peace and positive energy.
+            </p>
+
+
+            <div class="socials">
+
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    ◎
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    p
+                </a>
+
+                <a href="#" aria-label="Youtube">
+                    ▶
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- SHOP -->
+
+        <div class="footer-column">
+
+            <h3>
+               Our Services
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="reiki-healing.html">Reiki Healing</a>
+                </li>
+
+                <li>
+                    <a href="akashic-records.html">Akashic Records</a>
+                </li>
+
+                <li>
+                    <a href="animal-communication.html">Animal Communication</a>
+                </li>
+
+                <li>
+                    <a href="tarot-reading.html">Tarot Reading</a>
+                </li>
+
+                <li>
+                    <a href="home-energy.html">Home Energy</a>
+                </li>
+
+                <li>
+                    <a href="psychic-mediumShip.php_.html">Psychic MediumShip</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Contact Us
+            </h3>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ✉
+                </div>
+
+                support@Divinehealingworld.com
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                +91 9711766949
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ●
+                </div>
+
+                India
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="footer-bottom">
+
+        <div>
+            © 2026 Divinehealingworld. All rights reserved.
+        </div>
+          <div>
+    Developed By
+    <a
+        href="https://www.google.com/search?q=parvez3737"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="text-decoration: none; color: inherit;"
+    >
+        Parvez Ahmad (Parvez3737)
+    </a>
+</div>
+
+        <div class="footer-links">
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Shipping Policy
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+/* =====================================
+   SCROLL REVEAL
+===================================== */
+
+const cards = document.querySelectorAll(".review-card");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry, index) => {
+
+            if(entry.isIntersecting){
+
+                setTimeout(() => {
+
+                    entry.target.classList.add("show");
+
+                }, index * 180);
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+    {
+        threshold:0.15
+    }
+);
+
+
+cards.forEach(card => {
+
+    observer.observe(card);
+
+});
+
+
+/* =====================================
+   NEWSLETTER
+===================================== */
+
+const form = document.getElementById("subscribeForm");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    if(!email){
+        return;
+    }
+
+    const button =
+        form.querySelector("button");
+
+    const oldText =
+        button.textContent;
+
+    button.textContent = "Subscribed ✓";
+
+    button.style.background = "#493052";
+
+    setTimeout(() => {
+
+        button.textContent = oldText;
+
+        button.style.background = "";
+
+        form.reset();
+
+    }, 2500);
+
+});
+
+
+/* =====================================
+   MOUSE PARALLAX CRYSTALS
+===================================== */
+
+const crystals =
+    document.querySelectorAll(".crystal");
+
+document.addEventListener("mousemove", function(e){
+
+    const x =
+        (window.innerWidth / 2 - e.clientX) / 60;
+
+    const y =
+        (window.innerHeight / 2 - e.clientY) / 60;
+
+    crystals.forEach((crystal, index) => {
+
+        const amount =
+            (index + 1) * 0.6;
+
+        crystal.style.marginLeft =
+            `${x * amount}px`;
+
+        crystal.style.marginTop =
+            `${y * amount}px`;
+
+    });
+
+});
+
+
+/* =====================================
+   REVIEW CARD HOVER
+===================================== */
+
+cards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+
+        card.style.zIndex = "5";
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.zIndex = "";
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,3282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from https://divinehealingworld.com/tarot-reading.php by HTTrack Website Copier/3.x [XR&CO], Wed, 25 Nov 2026 08:05:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Divinehealingworld
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com/"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com/"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --purple: #382342;
+            --dark-purple: #24142e;
+            --pink: #b61491;
+            --text: #302632;
+            --muted: #817782;
+            --border: #ebe7ec;
+            --light: #faf8fb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            color: var(--text);
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .top-bar {
+            height: 29px;
+            background: var(--pink);
+            color: #fff;
+            padding: 0 5.5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 10px;
+        }
+
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .top-bar-item i {
+            font-size: 11px;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            height: 78px;
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            z-index: 1000;
+        }
+
+        .header-container {
+            width: 89%;
+            max-width: 1440px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            min-width: 235px;
+        }
+
+        .logo-symbol {
+            width: 43px;
+            height: 43px;
+            position: relative;
+        }
+
+        .logo-symbol img {
+            width: 50px;
+            height: -10px;
+            object-fit: contain;
+        }
+
+        .logo-content h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 1;
+            color: var(--purple);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-content p {
+            font-size: 10px;
+            color: #77707b;
+            margin-top: 4px;
+            letter-spacing: .35px;
+        }
+
+
+        /* NAVIGATION */
+
+        .navigation {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 34px;
+        }
+
+        .nav-link {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-size: 12px;
+            color: #302932;
+            transition: color .25s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 19px;
+            width: 0;
+            height: 2px;
+            background: var(--purple);
+            transition: width .3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--purple);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .shop-link {
+            gap: 6px;
+        }
+
+        .shop-link i {
+            font-size: 8px;
+        }
+
+
+        /* SHOP DROPDOWN */
+
+        .shop-dropdown {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .shop-menu {
+            display: none;
+            list-style: none;
+            padding: 8px 0;
+            margin: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 230px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            box-shadow: 0 10px 28px rgba(36,20,46,.12);
+            z-index: 9999;
+        }
+
+        .shop-dropdown:hover .shop-menu {
+            display: block;
+        }
+
+        .shop-dropdown:hover .shop-link i {
+            transform: rotate(180deg);
+        }
+
+        .shop-link i {
+            transition: .25s ease;
+        }
+
+        .shop-menu li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 15px;
+            color: #333;
+            font-size: 13px;
+            transition: .2s ease;
+        }
+
+        .shop-menu li a:hover {
+            background: #faf5fb;
+            color: var(--pink);
+        }
+
+        .shop-menu li a i {
+            width: 17px;
+            color: var(--purple);
+            font-size: 12px;
+        }
+
+
+        /* HEADER ACTIONS */
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .header-icon {
+            border: 0;
+            background: transparent;
+            color: #302632;
+            font-size: 17px;
+            width: 20px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .header-icon:hover {
+            color: var(--purple);
+        }
+
+        .badge-icon span {
+            position: absolute;
+            top: -5px;
+            right: -8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--purple);
+            color: #fff;
+            font-size: 8px;
+            font-weight: 600;
+        }
+
+
+        /* MOBILE */
+
+        .mobile-menu-button {
+            display: none;
+            border: 0;
+            background: transparent;
+            font-size: 19px;
+            color: var(--purple);
+            cursor: pointer;
+        }
+
+        .mobile-navigation {
+            display: none;
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 10px 5%;
+            position: relative;
+            z-index: 999;
+            box-shadow: 0 8px 20px rgba(0,0,0,.06);
+        }
+
+        .mobile-navigation.show {
+            display: block;
+        }
+
+        .mobile-navigation a {
+            display: block;
+            padding: 13px 5px;
+            border-bottom: 1px solid #f0edf1;
+            font-size: 13px;
+        }
+
+        .mobile-shop {
+            border-bottom: 1px solid #f0edf1;
+        }
+
+        .mobile-shop-toggle {
+            width: 100%;
+            padding: 13px 5px;
+            border: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: inherit;
+            font-size: 13px;
+            color: #302932;
+            cursor: pointer;
+        }
+
+        .mobile-shop-toggle i {
+            font-size: 10px;
+            transition: transform .25s ease;
+        }
+
+        .mobile-shop.open .mobile-shop-toggle i {
+            transform: rotate(180deg);
+        }
+
+        .mobile-shop-menu {
+            display: none;
+            padding: 0 0 5px 14px;
+        }
+
+        .mobile-shop.open .mobile-shop-menu {
+            display: block;
+        }
+
+        .mobile-shop-menu a {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 10px 5px;
+            border-bottom: 0;
+            font-size: 12px;
+            color: #625a63;
+        }
+
+        .mobile-shop-menu i {
+            width: 14px;
+            font-size: 11px;
+        }
+
+
+        /* =========================
+           SHOP PRODUCTS PAGE
+        ========================= */
+
+
+        .shop-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .shop-heading h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 34px;
+            color: var(--purple);
+            margin-bottom: 8px;
+        }
+
+        .shop-heading p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* PRODUCT CARD */
+
+        .products-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .product-card {
+            display: grid;
+            grid-template-columns: 230px 1fr;
+            gap: 25px;
+            padding: 18px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            box-shadow: 0 7px 24px rgba(36,20,46,.05);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(36,20,46,.09);
+        }
+
+        .product-image-wrap {
+            width: 230px;
+            height: 230px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #faf8fb;
+        }
+
+        .product-image-wrap img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5px 10px 5px 0;
+        }
+
+        .product-title {
+            color: var(--pink);
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+        }
+
+        .product-name {
+            font-family: "Playfair Display", serif;
+            color: var(--purple);
+            font-size: 27px;
+            font-weight: 600;
+            margin-bottom: 11px;
+        }
+
+        .product-description {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin-bottom: 18px;
+        }
+
+        .product-bottom {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .product-price {
+            color: var(--purple);
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .add-cart-btn {
+            border: 0;
+            border-radius: 8px;
+            padding: 11px 19px;
+            background: var(--purple);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: .25s ease;
+        }
+
+        .add-cart-btn:hover {
+            background: var(--pink);
+        }
+
+        .empty-products {
+            text-align: center;
+            padding: 55px 20px;
+            border: 1px dashed #ddd5df;
+            border-radius: 14px;
+            color: var(--muted);
+        }
+
+        .empty-products i {
+            font-size: 35px;
+            color: #c7bdc9;
+            margin-bottom: 12px;
+        }
+
+        .all-categories {
+            display: flex;
+            justify-content: center;
+            gap: 9px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .category-pill {
+            padding: 8px 14px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 11px;
+            color: var(--purple);
+            background: #fff;
+        }
+
+        .category-pill:hover {
+            background: #faf5fb;
+            border-color: #d9c9dc;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1000px) {
+
+            .header-container {
+                width: 92%;
+            }
+
+            .navigation {
+                gap: 20px;
+            }
+
+            .nav-link {
+                font-size: 11px;
+            }
+
+            .logo {
+                min-width: 205px;
+            }
+
+            .logo-content h1 {
+                font-size: 22px;
+            }
+
+            .header-actions {
+                gap: 13px;
+            }
+
+            .shop-page {
+                width: 92%;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .top-bar {
+                display: none;
+            }
+
+            .header {
+                height: 70px;
+            }
+
+            .navigation {
+                display: none;
+            }
+
+            .header-container {
+                width: 92%;
+            }
+
+            .header-actions {
+                gap: 13px;
+            }
+
+            .header-actions .header-icon:nth-child(1),
+            .header-actions .header-icon:nth-child(2) {
+                display: none;
+            }
+
+            .mobile-menu-button {
+                display: flex;
+            }
+
+            .logo {
+                min-width: auto;
+            }
+
+            .logo-content h1 {
+                font-size: 21px;
+            }
+
+            .logo-content p {
+                font-size: 7px;
+            }
+
+            .shop-page {
+                width: 92%;
+                padding-top: 38px;
+            }
+
+            .shop-heading h2 {
+                font-size: 28px;
+            }
+
+            .product-card {
+                grid-template-columns: 1fr;
+                gap: 17px;
+            }
+
+            .product-image-wrap {
+                width: 100%;
+                height: 260px;
+            }
+
+            .product-info {
+                padding: 0 4px 5px;
+            }
+
+            .product-name {
+                font-size: 23px;
+            }
+
+        }
+
+        @media (max-width: 420px) {
+
+            .header-container {
+                width: 90%;
+            }
+
+            .header-actions {
+                gap: 9px;
+            }
+
+            .product-image-wrap {
+                height: 230px;
+            }
+
+            .product-bottom {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<!--<div class="top-bar">
+
+    <div class="top-bar-item">
+        <i class="fa-solid fa-truck"></i>
+        <span>Free Shipping All Over India</span>
+    </div>
+
+    <div class="top-bar-item">
+        <i class="fa-regular fa-gem"></i>
+        <span>100% Natural & Authentic Crystals</span>
+    </div>
+
+    <div class="top-bar-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Easy Returns & Secure Payments</span>
+    </div>
+
+</div>-->
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <div class="header-container">
+
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-symbol">
+
+                <img
+                    src="../vectorjungal.com/files/preview/1280x977/11724061489x7dnzumlkkkdctwc1jp9s6hmcc7hkelbcywsoq1ks90ylksgcvupex8nfc0knms8robegbblqtofo2ckk2viwtbtpyhxqomm1o4i.html"
+                    alt="Divinehealingworld"
+                >
+
+            </div>
+
+            <div class="logo-content">
+
+                <h1>Divine Healing world</h1>
+
+                <p>Nature's Energy. Your Style</p>
+
+            </div>
+
+        </a>
+
+
+        <nav class="navigation">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+<a href="reiki-healing.html" class="nav-link">
+                Reiki Healing
+            
+
+            <a href="tarot-reading.html" class="nav-link">
+                Tarot Reading
+            </a>
+
+            <a href="akashic-records.html" class="nav-link">
+                Akashic Records
+            </a>
+
+            <a href="animal-communication.html" class="nav-link">
+                Animal Communication
+            </a>
+
+  <a href="psychic-mediumship.html" class="nav-link">
+                Psychic Mediumship
+            </a>                          <div class="shop-dropdown">
+
+              <!---  <a
+                    href="#"
+                    class="nav-link shop-link "
+                    aria-haspopup="true"
+                >
+                    Shop
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+
+                <ul class="shop-menu">
+                    /
+                        
+                            <li>
+
+                                <a
+                                    href="shop-category-products.php?category_id=3"
+                                >
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                    Crystals
+                                </a>
+
+                            </li>
+
+                        
+                            <li>
+
+                                <a
+                                    href="shop-category-products.php?category_id=4"
+                                >
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                    Rings
+                                </a>
+
+                            </li>
+
+                        
+                    
+                </ul>---->
+
+            </div>
+
+
+        </nav>
+
+
+        <div class="header-actions">
+         <style>
+         .session-btn
+         {
+             background:black;
+             color:#fff;
+             font-size:15px;
+             font-weight:bold;
+             border:solid 1px white;
+             padding:10px;
+             border-radius:15px;
+         }
+         
+         </style>
+            <button class="session-btn"><a href="book-your-session.html">Book Session</a></button>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     MOBILE NAV
+========================= -->
+
+<nav
+    class="mobile-navigation"
+    id="mobileNavigation"
+>
+
+    <a href="index-2.html">
+        Home
+    </a>
+
+
+    <div class="mobile-shop">
+
+        <button
+            type="button"
+            class="mobile-shop-toggle"
+            id="mobileShopToggle"
+        >
+
+            <span>
+                Shop
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </button>
+
+
+        <div
+            class="mobile-shop-menu"
+            id="mobileShopMenu"
+        >
+
+            <a href="products.html">
+
+                <i class="fa-solid fa-box"></i>
+
+                Products
+
+            </a>
+
+
+            <a href="best-sellers.html">
+
+                <i class="fa-solid fa-star"></i>
+
+                Best Sellers
+
+            </a>
+
+
+            
+                <a
+                    href="shop-category-productsd7b8.html?category_id=3"
+                >
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Crystals
+                </a>
+
+            
+                <a
+                    href="shop-category-products9738.html?category_id=4"
+                >
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Rings
+                </a>
+
+            
+        </div>
+
+    </div>
+
+
+    <a href="about.html">
+        About Us
+    </a>
+
+    <a href="#">
+        Tarot Reading
+    </a>
+
+    <a href="#">
+        Akashic Records
+    </a>
+
+    <a href="#">
+        Animal Communication
+    </a>
+
+</nav>
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<main class="shop-page">
+
+    
+
+</main>
+
+
+<script>
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const mobileNavigation =
+        document.getElementById("mobileNavigation");
+
+    const menuIcon =
+        menuButton
+            ? menuButton.querySelector("i")
+            : null;
+
+
+    if (
+        menuButton &&
+        mobileNavigation &&
+        menuIcon
+    ) {
+
+        menuButton.addEventListener("click", () => {
+
+            mobileNavigation.classList.toggle("show");
+
+            if (
+                mobileNavigation.classList.contains("show")
+            ) {
+
+                menuIcon.classList.remove("fa-bars");
+                menuIcon.classList.add("fa-xmark");
+
+            } else {
+
+                menuIcon.classList.remove("fa-xmark");
+                menuIcon.classList.add("fa-bars");
+
+            }
+
+        });
+
+    }
+
+
+    /* =========================
+       MOBILE SHOP
+    ========================= */
+
+    const mobileShopToggle =
+        document.getElementById("mobileShopToggle");
+
+    const mobileShop =
+        document.querySelector(".mobile-shop");
+
+
+    if (
+        mobileShopToggle &&
+        mobileShop
+    ) {
+
+        mobileShopToggle.addEventListener(
+            "click",
+            function () {
+
+                mobileShop.classList.toggle("open");
+
+            }
+        );
+
+    }
+
+
+    /* =========================
+       ADD TO CART
+       UI READY
+    ========================= */
+
+    document
+        .querySelectorAll(".add-cart-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const productName =
+                        this.dataset.productName || "Product";
+
+                    alert(
+                        productName +
+                        " added to cart."
+                    );
+
+                }
+            );
+
+        });
+
+
+    /* =========================
+       CLOSE MOBILE MENU
+    ========================= */
+
+    document
+        .querySelectorAll(".mobile-navigation a")
+        .forEach(link => {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    if (mobileNavigation) {
+                        mobileNavigation.classList.remove("show");
+                    }
+
+                    if (menuIcon) {
+
+                        menuIcon.classList.remove("fa-xmark");
+                        menuIcon.classList.add("fa-bars");
+
+                    }
+
+                    if (mobileShop) {
+                        mobileShop.classList.remove("open");
+                    }
+
+                }
+            );
+
+        });
+
+</script>
+
+</body>
+
+<!-- Mirrored from https://divinehealingworld.com/tarot-reading.php by HTTrack Website Copier/3.x [XR&CO], Wed, 25 Nov 2026 08:05:22 GMT -->
+</html>
+<main class="tarot-page">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+.tarot-page {
+    --purple: #301745;
+    --purple-light: #51406d;
+    --gold: #d2a15e;
+    --cream: #fcf8f3;
+    --text: #514b58;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: #fffdfa;
+    overflow: hidden;
+}
+
+.tarot-page * { box-sizing: border-box; }
+
+.tarot-page img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tarot-page h1,
+.tarot-page h2,
+.tarot-page h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--purple);
+    line-height: 1.25;
+    margin: 0 0 15px;
+}
+
+.tarot-page p {
+    font-size: 14px;
+    line-height: 1.85;
+    margin: 0 0 14px;
+}
+
+.tarot-page a { text-decoration: none; }
+
+.tarot-page .tr-container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+.tarot-page .tr-label {
+    display: block;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.tarot-page .tr-heading {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 38px;
+}
+
+.tarot-page .tr-heading h2 {
+    font-size: clamp(28px, 3.3vw, 39px);
+}
+
+.tarot-page .tr-heading p { max-width: 680px; margin: auto; }
+
+.tarot-page .tr-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: var(--gold);
+    color: #281630;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.tarot-page .tr-btn:hover {
+    background: #f2d18f;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px #0002;
+}
+
+.tarot-page .tr-btn-dark {
+    color: white;
+    background: var(--purple);
+}
+
+.tarot-page .tr-btn-dark:hover { background: #513365; }
+
+/* SCROLL ANIMATION */
+
+.tarot-page .tr-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.tarot-page .tr-reveal.tr-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tarot-page .tr-delay1 { transition-delay: .12s; }
+.tarot-page .tr-delay2 { transition-delay: .24s; }
+.tarot-page .tr-delay3 { transition-delay: .36s; }
+
+@keyframes tr-hero-enter {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes tr-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* HERO */
+
+.tarot-page .tr-hero {
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+        linear-gradient(90deg,
+            rgba(21, 10, 30, .94) 0%,
+            rgba(34, 17, 43, .80) 48%,
+            rgba(24, 12, 30, .15) 100%),
+        url('https://images.openai.com/static-rsc-4/kBBiBQJG4OMb3ihGDq7HUd012Lgc_0IcFC5Bi5KAv9R4OdJh7klxxvmJrB1OEedirefnxhvRFDPqLUFMEdewj0KC4jYooP4CZI7gOEM4_lqdWRBmrh6QS5NXSn9MRrYJhUbGu5EvPhw_UgVWTodACYXT74k2Y0Na2n71tVeLENmFqgkGMAwuKU6nfqhUYG-5?purpose=fullsize')
+        center 52% / cover no-repeat;
+}
+
+.tarot-page .tr-hero-content {
+    max-width: 670px;
+    padding: 65px 0;
+    position: relative;
+    z-index: 1;
+    animation: tr-hero-enter 1s ease both;
+}
+
+.tarot-page .tr-hero h1 {
+    color: white;
+    font-size: clamp(36px, 5vw, 57px);
+    margin-bottom: 17px;
+}
+
+.tarot-page .tr-hero h1 span { color: #f2c77b; }
+
+.tarot-page .tr-hero h2 {
+    color: #f5d49a;
+    font-size: clamp(17px, 2vw, 22px);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.tarot-page .tr-hero p {
+    color: #f1eaf3;
+    max-width: 580px;
+    margin-bottom: 24px;
+}
+
+.tarot-page .tr-hero .tr-label { color: #f2ca86; }
+
+/* INTRODUCTION */
+
+.tarot-page .tr-intro {
+    padding: 75px 0;
+    background: var(--cream);
+}
+
+.tarot-page .tr-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.tarot-page .tr-image-frame { position: relative; }
+
+.tarot-page .tr-intro-img {
+    height: 380px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 15px 35px #30174519;
+}
+
+.tarot-page .tr-image-frame::before {
+    content: "";
+    position: absolute;
+    border: 2px solid var(--gold);
+    width: 100px;
+    height: 100px;
+    top: -12px;
+    left: -12px;
+    border-radius: 12px;
+}
+
+.tarot-page .tr-intro h2 {
+    font-size: clamp(27px, 3vw, 38px);
+}
+
+.tarot-page .tr-intro .tr-label { color: #9b7954; }
+
+.tarot-page .tr-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.tarot-page .tr-benefit {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 13px;
+    border-radius: 9px;
+    background: white;
+    border: 1px solid #eee5e8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.tarot-page .tr-benefit-icon {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: #f5e8d8;
+    color: #8d6439;
+    font-size: 19px;
+}
+
+/* READING SERVICES */
+
+.tarot-page .tr-services {
+    padding: 75px 0;
+    background: #fffdfa;
+}
+
+.tarot-page .tr-service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.tarot-page .tr-card {
+    overflow: hidden;
+    border: 1px solid #eee6ec;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 7px 22px #30174509;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.tarot-page .tr-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 18px 35px #30174519;
+}
+
+.tarot-page .tr-card-image {
+    height: 190px;
+    overflow: hidden;
+}
+
+.tarot-page .tr-card-image img {
+    height: 100%;
+    transition: transform .6s ease;
+}
+
+.tarot-page .tr-card:hover .tr-card-image img {
+    transform: scale(1.07);
+}
+
+.tarot-page .tr-card-body {
+    text-align: center;
+    padding: 0 17px 24px;
+    position: relative;
+}
+
+.tarot-page .tr-card-icon {
+    display: grid;
+    place-items: center;
+    width: 51px;
+    height: 51px;
+    margin: -25px auto 13px;
+    position: relative;
+    background: #fff8ee;
+    border: 3px solid white;
+    border-radius: 50%;
+    color: #9c7542;
+    font-size: 22px;
+}
+
+.tarot-page .tr-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.tarot-page .tr-card p {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 17px;
+}
+
+.tarot-page .tr-card-link {
+    color: #79552f;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.tarot-page .tr-card-link:hover { color: var(--purple); }
+
+/* WHY CHOOSE US */
+
+.tarot-page .tr-why {
+    padding: 75px 0;
+    background: #f5eff5;
+}
+
+.tarot-page .tr-why-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.tarot-page .tr-why-img {
+    height: 390px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px #30174518;
+}
+
+.tarot-page .tr-why h2 {
+    font-size: clamp(28px, 3vw, 39px);
+}
+
+.tarot-page .tr-why .tr-label { color: #9b7954; }
+
+.tarot-page .tr-why-list {
+    display: grid;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.tarot-page .tr-why-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #eee5ed;
+    transition: transform .3s ease;
+}
+
+.tarot-page .tr-why-item:hover { transform: translateX(5px); }
+
+.tarot-page .tr-check {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #f3e5ce;
+    color: #72502d;
+    font-weight: 700;
+}
+
+.tarot-page .tr-why-item h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.tarot-page .tr-why-item p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* HOW IT WORKS */
+
+.tarot-page .tr-process {
+    padding: 75px 0;
+    background:
+        linear-gradient(110deg, #21172fef, #4c345bef),
+        url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=80')
+        center / cover;
+}
+
+.tarot-page .tr-process h2 { color: white; }
+.tarot-page .tr-process .tr-heading p { color: #eee6f2; }
+.tarot-page .tr-process .tr-label { color: #f1ce91; }
+
+.tarot-page .tr-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarot-page .tr-step {
+    text-align: center;
+    padding: 30px 22px;
+    border: 1px solid #ffffff2b;
+    border-radius: 12px;
+    background: #ffffff0b;
+    transition: .3s ease;
+}
+
+.tarot-page .tr-step:hover {
+    background: #ffffff15;
+    transform: translateY(-7px);
+}
+
+.tarot-page .tr-step-icon {
+    width: 68px;
+    height: 68px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 20px;
+    background: #fff;
+    color: var(--purple);
+    border-radius: 50%;
+    font-size: 26px;
+    animation: tr-float 4s ease-in-out infinite;
+}
+
+.tarot-page .tr-step h3 {
+    font-size: 21px;
+    color: #f2d39c;
+}
+
+.tarot-page .tr-step p { color: #eee6f2; font-size: 13px; }
+
+/* FINAL CTA */
+
+.tarot-page .tr-cta {
+    padding: 75px 0;
+    background:
+        linear-gradient(90deg, rgba(20, 11, 29, .94), rgba(40, 21, 45, .72)),
+        url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=85')
+        center / cover no-repeat;
+}
+
+.tarot-page .tr-cta-inner {
+    max-width: 780px;
+    margin: auto;
+    text-align: center;
+}
+
+.tarot-page .tr-cta h2 {
+    color: white;
+    font-size: clamp(30px, 4vw, 45px);
+}
+
+.tarot-page .tr-cta p {
+    color: #f2eaf3;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.tarot-page .tr-cta .tr-label { color: #f2ce8c; }
+
+/* RESPONSIVE */
+
+@media(max-width: 1000px) {
+    .tarot-page .tr-service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tarot-page .tr-card-image { height: 210px; }
+}
+
+@media(max-width: 650px) {
+    .tarot-page .tr-container { width: 90%; }
+
+    .tarot-page .tr-hero {
+        min-height: 470px;
+        background-position: 63% center;
+    }
+
+    .tarot-page .tr-hero h1 { font-size: 36px; }
+
+    .tarot-page .tr-hero h2 { font-size: 16px; }
+
+    .tarot-page .tr-hero p { font-size: 13px; }
+
+    .tarot-page .tr-intro,
+    .tarot-page .tr-services,
+    .tarot-page .tr-why,
+    .tarot-page .tr-process,
+    .tarot-page .tr-cta { padding: 52px 0; }
+
+    .tarot-page .tr-intro-grid,
+    .tarot-page .tr-why-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .tarot-page .tr-intro-img,
+    .tarot-page .tr-why-img { height: 270px; }
+
+    .tarot-page .tr-service-grid { gap: 12px; }
+
+    .tarot-page .tr-card-image { height: 140px; }
+
+    .tarot-page .tr-card-body { padding: 0 10px 17px; }
+
+    .tarot-page .tr-card h3 { font-size: 16px; }
+
+    .tarot-page .tr-card p { font-size: 11px; }
+
+    .tarot-page .tr-card-link { font-size: 11px; }
+
+    .tarot-page .tr-benefits { grid-template-columns: 1fr; }
+
+    .tarot-page .tr-steps {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tarot-page .tr-step { padding: 25px 20px; }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    .tarot-page *,
+    .tarot-page *::before,
+    .tarot-page *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+
+    .tarot-page .tr-reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+</style>
+
+<!-- HERO -->
+
+<section class="tr-hero">
+    <div class="tr-container">
+        <div class="tr-hero-content">
+            <span class="tr-label">Tarot Reading · Divine Healing World</span>
+
+            <h1>
+                Tarot Reading –
+                <span>Discover the Answers Within</span>
+            </h1>
+
+            <h2>
+                Find Clarity, Understand Your Journey,
+                and Explore New Possibilities
+            </h2>
+
+            <p>
+                Sometimes life leaves us with questions about love, relationships,
+                career, personal growth, and the path ahead. Tarot reading offers
+                a meaningful way to reflect on these questions, explore different
+                perspectives, and reconnect with your inner wisdom.
+            </p>
+
+            <a href="#tr-services" class="tr-btn">
+                Explore Tarot Readings <span>→</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+
+<section class="tr-intro">
+    <div class="tr-container tr-intro-grid">
+
+        <div class="tr-image-frame tr-reveal">
+            <img
+                class="tr-intro-img"
+                src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                alt="Tarot reading atmosphere with candles"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="tr-reveal tr-delay1">
+            <span class="tr-label">Discover Your Inner Wisdom</span>
+
+            <h2>Explore Your Questions Through Tarot</h2>
+
+            <p>
+                Through the symbolism of tarot cards and personalized interpretations,
+                each session creates a supportive space to explore your concerns,
+                recognize patterns, and consider the possibilities before you.
+            </p>
+
+            <p>
+                Whether you are seeking clarity in your relationships, direction
+                in your professional life, or a deeper understanding of yourself,
+                a tarot reading can be a valuable part of your self-discovery journey.
+            </p>
+
+            <div class="tr-benefits">
+                <div class="tr-benefit">
+                    <span class="tr-benefit-icon">✧</span>
+                    Personalized Readings
+                </div>
+
+                <div class="tr-benefit">
+                    <span class="tr-benefit-icon">♡</span>
+                    Compassionate Guidance
+                </div>
+
+                <div class="tr-benefit">
+                    <span class="tr-benefit-icon">◎</span>
+                    Private Experience
+                </div>
+
+                <div class="tr-benefit">
+                    <span class="tr-benefit-icon">♧</span>
+                    Fresh Perspectives
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TAROT SERVICES -->
+
+<section class="tr-services" id="tr-services">
+    <div class="tr-container">
+
+        <div class="tr-heading tr-reveal">
+            <span class="tr-label">Our Tarot Reading Services</span>
+            <h2>Find Guidance for Every Aspect of Your Life</h2>
+            <p>
+                Explore the areas that matter to you and discover new perspectives
+                through a thoughtful, personalized tarot reading session.
+            </p>
+        </div>
+
+        <div class="tr-service-grid">
+
+            <article class="tr-card tr-reveal">
+                <div class="tr-card-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+                        alt="Love and relationship connection"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="tr-card-body">
+                    <div class="tr-card-icon">♡</div>
+                    <h3>Love &amp; Relationship Tarot Reading</h3>
+
+                    <p>
+                        Relationships can bring beautiful moments as well as
+                        uncertainty. A love tarot reading helps you reflect on
+                        emotional connections, relationship patterns, communication,
+                        and the questions close to your heart. Explore your situation
+                        with greater awareness and consider healthier ways to move forward.
+                    </p>
+
+                    <a href="#tr-booking" class="tr-card-link">
+                        Explore a Reading →
+                    </a>
+                </div>
+            </article>
+
+            <article class="tr-card tr-reveal tr-delay1">
+                <div class="tr-card-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+                        alt="Career planning and professional goals"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="tr-card-body">
+                    <div class="tr-card-icon">✧</div>
+                    <h3>Career &amp; Business Tarot Reading</h3>
+
+                    <p>
+                        Feeling uncertain about your career direction or a
+                        professional decision? Career tarot readings offer an
+                        opportunity to reflect on your ambitions, challenges,
+                        potential opportunities, and priorities, helping you
+                        approach your next steps with a fresh perspective.
+                    </p>
+
+                    <a href="#tr-booking" class="tr-card-link">
+                        Explore a Reading →
+                    </a>
+                </div>
+            </article>
+
+            <article class="tr-card tr-reveal tr-delay2">
+                <div class="tr-card-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+                        alt="Meditation and personal growth"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="tr-card-body">
+                    <div class="tr-card-icon">☼</div>
+                    <h3>Personal Growth &amp; Self-Discovery</h3>
+
+                    <p>
+                        Sometimes the most important answers begin with
+                        understanding ourselves. A personal growth reading
+                        explores recurring patterns, inner conflicts, personal
+                        aspirations, and opportunities for reflection, supporting
+                        a deeper connection with your values and goals.
+                    </p>
+
+                    <a href="#tr-booking" class="tr-card-link">
+                        Explore a Reading →
+                    </a>
+                </div>
+            </article>
+
+            <article class="tr-card tr-reveal tr-delay3">
+                <div class="tr-card-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+                        alt="Night sky and reflection"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="tr-card-body">
+                    <div class="tr-card-icon">☾</div>
+                    <h3>General Tarot Reading</h3>
+
+                    <p>
+                        Have questions about your current life situation? A general
+                        tarot reading provides space to explore the themes that
+                        matter most to you. Bring your questions, concerns, or simply
+                        an open mind, and discover new perspectives through the cards.
+                    </p>
+
+                    <a href="#tr-booking" class="tr-card-link">
+                        Explore a Reading →
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="tr-why">
+    <div class="tr-container tr-why-grid">
+
+        <div class="tr-reveal">
+            <img
+                class="tr-why-img"
+                src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                alt="Peaceful tarot reading setting"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="tr-reveal tr-delay1">
+            <span class="tr-label">Your Journey Matters</span>
+
+            <h2>Why Choose a Tarot Reading Session?</h2>
+
+            <p>
+                Every reading is approached with care, respect, and an understanding
+                that your life journey is unique. Our focus is on creating a
+                comfortable, confidential, and non-judgmental space where you can
+                explore your questions openly.
+            </p>
+
+            <div class="tr-why-list">
+
+                <div class="tr-why-item">
+                    <div class="tr-check">✓</div>
+                    <div>
+                        <h3>Personalized Interpretations</h3>
+                        <p>Readings shaped around your questions and areas of interest.</p>
+                    </div>
+                </div>
+
+                <div class="tr-why-item">
+                    <div class="tr-check">✓</div>
+                    <div>
+                        <h3>Compassionate &amp; Thoughtful Guidance</h3>
+                        <p>A respectful environment to explore different perspectives.</p>
+                    </div>
+                </div>
+
+                <div class="tr-why-item">
+                    <div class="tr-check">✓</div>
+                    <div>
+                        <h3>Private Reading Experience</h3>
+                        <p>A comfortable space to discuss your thoughts and concerns.</p>
+                    </div>
+                </div>
+
+                <div class="tr-why-item">
+                    <div class="tr-check">✓</div>
+                    <div>
+                        <h3>Personal Reflection &amp; Empowerment</h3>
+                        <p>Fresh perspectives to help you reflect on your own choices.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section class="tr-process">
+    <div class="tr-container">
+
+        <div class="tr-heading tr-reveal">
+            <span class="tr-label">Your Reading Journey</span>
+            <h2>A Simple Path to Your Tarot Reading</h2>
+            <p>
+                Begin with an open mind and take each step at your own pace.
+            </p>
+        </div>
+
+        <div class="tr-steps">
+
+            <article class="tr-step tr-reveal">
+                <div class="tr-step-icon">▦</div>
+                <h3>1. Book Your Session</h3>
+                <p>
+                    Choose your preferred reading and arrange a convenient
+                    time for your session.
+                </p>
+            </article>
+
+            <article class="tr-step tr-reveal tr-delay1">
+                <div class="tr-step-icon">☏</div>
+                <h3>2. Share Your Questions</h3>
+                <p>
+                    Let us know what you would like to explore. Share specific
+                    questions or simply keep an open mind.
+                </p>
+            </article>
+
+            <article class="tr-step tr-reveal tr-delay2">
+                <div class="tr-step-icon">✧</div>
+                <h3>3. Explore Your Reading</h3>
+                <p>
+                    Reflect on the cards, consider new perspectives, and
+                    discover insights relevant to your journey.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- FINAL BOOKING CTA -->
+
+<section class="tr-cta" id="tr-booking">
+    <div class="tr-container">
+        <div class="tr-cta-inner tr-reveal">
+
+            <span class="tr-label">Your Journey Towards Clarity Begins Here</span>
+
+            <h2>Discover the Answers Within</h2>
+
+            <p>
+                You don't need to have every answer before beginning. Sometimes,
+                taking a moment to pause, reflect, and explore a different
+                perspective can help you see your situation more clearly.
+            </p>
+
+            <!-- Replace # with the actual booking/contact page URL -->
+            <a href="#" class="tr-btn">
+                Book Your Tarot Reading Session Today <span>→</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<script>
+(function () {
+    const page = document.querySelector('.tarot-page');
+    if (!page) return;
+
+    const revealItems = page.querySelectorAll('.tr-reveal');
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('tr-show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -30px 0px'
+        });
+
+        revealItems.forEach(function (item) {
+            observer.observe(item);
+        });
+    } else {
+        revealItems.forEach(function (item) {
+            item.classList.add('tr-show');
+        });
+    }
+
+    // Smooth scrolling within this page only
+    page.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            const href = link.getAttribute('href');
+
+            if (!href || href === '#') return;
+
+            const target = page.querySelector(href);
+
+            if (target) {
+                event.preventDefault();
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+})();
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Divinehealingworld - Customer Reviews</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#29202f;
+    overflow-x:hidden;
+}
+
+button,
+input{
+    font-family:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-section{
+    padding:16px 0 10px;
+}
+
+.benefits-box{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+
+    background:linear-gradient(
+        120deg,
+        #faf7f5,
+        #fff,
+        #faf7f5
+    );
+
+    border-radius:10px;
+
+    box-shadow:
+        0 5px 25px rgba(45,20,55,.04);
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    overflow:hidden;
+
+    animation:fadeDown .8s ease;
+}
+
+.benefit{
+    min-height:74px;
+
+    display:flex;
+    align-items:center;
+    gap:13px;
+
+    padding:10px 25px;
+
+    border-right:1px solid #d9d2d8;
+
+    transition:.35s ease;
+}
+
+.benefit:last-child{
+    border-right:none;
+}
+
+.benefit:hover{
+    background:#fff;
+    transform:translateY(-2px);
+}
+
+.benefit-icon{
+    width:40px;
+    height:40px;
+
+    border:1.5px solid #392443;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+    transition:.4s ease;
+}
+
+.benefit:hover .benefit-icon{
+    transform:rotate(360deg);
+    background:#3b2546;
+    color:#fff;
+}
+
+.benefit h4{
+    font-size:11px;
+    font-weight:600;
+    margin-bottom:1px;
+}
+
+.benefit p{
+    font-size:8px;
+    color:#777;
+}
+
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial-section{
+    padding:18px 0 18px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:15px;
+
+    animation:fadeUp .8s ease;
+}
+
+.section-title h2{
+    font-family:'DM Serif Display',serif;
+    font-size:28px;
+    font-weight:400;
+    color:#33203e;
+}
+
+.section-title p{
+    font-size:18px;
+    color:#777;
+    margin-top:1px;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.review-card{
+    border:1px solid #e2dfe2;
+    border-radius:5px;
+
+    padding:11px 15px;
+
+    min-height:108px;
+
+    background:#fff;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    opacity:0;
+    transform:translateY(30px);
+}
+
+.review-card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.review-card:hover{
+    transform:translateY(-6px);
+    border-color:#c9b6d0;
+
+    box-shadow:
+        0 12px 30px rgba(54,30,65,.10);
+}
+
+.review-top{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.avatar{
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    background:linear-gradient(
+        135deg,
+        #eee,
+        #ddd
+    );
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.stars{
+    color:#e4a719;
+    font-size:18px;
+    letter-spacing:1px;
+    margin-bottom:3px;
+}
+
+.review-text{
+    font-size:12px;
+    color:#4d4d4d;
+    line-height:1.55;
+
+    margin-top:8px;
+}
+
+.customer{
+    margin-top:7px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.customer-location{
+    font-size:10px;
+    color:#777;
+    margin-top:1px;
+}
+
+/* =========================
+   COMMUNITY
+========================= */
+
+.community{
+    position:relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #684c72,
+            #795a83,
+            #67476e
+        );
+
+    min-height:98px;
+
+    overflow:hidden;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    margin-top:0;
+}
+
+.community-content{
+    position:relative;
+    z-index:2;
+}
+
+.community h2{
+    font-family:'DM Serif Display',serif;
+    font-weight:400;
+    font-size:25px;
+}
+
+.community p{
+    font-size:15px;
+    opacity:.85;
+    margin:2px 0 8px;
+}
+
+.subscribe{
+    display:flex;
+    width:450px;
+    height:40px;
+    margin:auto;
+
+    background:#fff;
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.subscribe:focus-within{
+    transform:scale(1.03);
+}
+
+.subscribe input{
+    flex:1;
+    min-width:0;
+
+    border:none;
+    outline:none;
+
+    padding:0 12px;
+
+    font-size:15px;
+    color:#444;
+}
+
+.subscribe button{
+    border:none;
+
+    width:100px;
+
+    background:#28192f;
+    color:#fff;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.subscribe button:hover{
+    background:#170e1b;
+}
+
+/* Floating crystals */
+
+.crystal{
+    position:absolute;
+    width:45px;
+    height:45px;
+
+    opacity:.25;
+
+    border:1px solid #fff;
+
+    transform:rotate(35deg);
+
+    animation:floatCrystal 4s ease-in-out infinite;
+}
+
+.crystal::before{
+    content:"";
+    position:absolute;
+    inset:8px;
+
+    border:1px solid #fff;
+
+    transform:rotate(45deg);
+}
+
+.crystal.one{
+    left:15%;
+    top:16px;
+}
+
+.crystal.two{
+    right:15%;
+    top:20px;
+    width:35px;
+    height:35px;
+
+    animation-delay:1s;
+}
+
+.crystal.three{
+    right:11%;
+    top:43px;
+    width:20px;
+    height:20px;
+
+    animation-delay:2s;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:
+        linear-gradient(
+            135deg,
+            #20142a,
+            #2b1936,
+            #1d1325
+        );
+
+    color:#fff;
+
+    padding:12px 0 8px;
+}
+
+.footer-container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.7fr
+        1fr
+        1fr
+        1.15fr;
+
+    gap:30px;
+}
+
+/* Logo */
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:7px;
+}
+
+.logo-icon{
+    font-size:30px;
+    line-height:1;
+}
+
+.footer-logo h2{
+    font-family:'DM Serif Display',serif;
+    font-size:23px;
+    font-weight:400;
+}
+
+.footer-logo span{
+    display:block;
+    font-size:12px;
+    color:#ddd;
+    letter-spacing:.5px;
+}
+
+.footer-about p{
+    font-size:10px;
+    line-height:1.7;
+
+    color:#d4ccd8;
+
+    max-width:280px;
+
+    margin-top:8px;
+}
+
+/* Social */
+
+.socials{
+    display:flex;
+    gap:13px;
+    margin-top:9px;
+}
+
+.socials a{
+    color:#fff;
+    text-decoration:none;
+
+    font-size:20px;
+
+    width:18px;
+    height:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    transition:.3s;
+}
+
+.socials a:hover{
+    background:#fff;
+    color:#28182f;
+    transform:translateY(-3px);
+}
+
+/* Footer columns */
+
+.footer-column h3{
+    font-size:15px;
+    font-weight:500;
+
+    margin-bottom:8px;
+}
+
+.footer-column ul{
+    list-style:none;
+}
+
+.footer-column li{
+    margin-bottom:5px;
+}
+
+.footer-column a{
+    color:#d2cbd6;
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#fff;
+    padding-left:4px;
+}
+
+/* Contact */
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#d2cbd6;
+
+    font-size:15px;
+
+    margin-bottom:7px;
+}
+
+.contact-icon{
+    width:15px;
+    text-align:center;
+    font-size:18px;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-bottom{
+    width:92%;
+    max-width:1180px;
+
+    margin:8px auto 0;
+
+    padding-top:7px;
+
+    border-top:1px solid rgba(255,255,255,.14);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    font-size:12px;
+
+    color:#bbb;
+}
+
+.footer-links{
+    display:flex;
+    gap:12px;
+}
+
+.footer-links a{
+    color:#bbb;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes floatCrystal{
+
+    0%,100%{
+        transform:
+            rotate(35deg)
+            translateY(0);
+    }
+
+    50%{
+        transform:
+            rotate(50deg)
+            translateY(-8px);
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:850px){
+
+    .benefits-box{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .benefit:nth-child(2){
+        border-right:none;
+    }
+
+    .benefit:nth-child(1),
+    .benefit:nth-child(2){
+        border-bottom:1px solid #ddd;
+    }
+
+    .reviews{
+        grid-template-columns:1fr;
+        max-width:600px;
+        margin:auto;
+    }
+
+    .review-card{
+        min-height:auto;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .benefits-section{
+        padding-top:10px;
+    }
+
+    .benefits-box{
+        width:94%;
+        grid-template-columns:1fr 1fr;
+    }
+
+    .benefit{
+        padding:10px;
+        gap:8px;
+    }
+
+    .benefit-icon{
+        width:34px;
+        height:34px;
+        font-size:14px;
+    }
+
+    .benefit h4{
+        font-size:9px;
+    }
+
+    .benefit p{
+        font-size:6.5px;
+    }
+
+    .section-title h2{
+        font-size:21px;
+    }
+
+    .section-title p{
+        font-size:8px;
+    }
+
+    .reviews{
+        width:94%;
+    }
+
+    .community{
+        min-height:105px;
+    }
+
+    .community h2{
+        font-size:18px;
+    }
+
+    .subscribe{
+        width:230px;
+    }
+
+    .crystal.one{
+        left:4%;
+    }
+
+    .crystal.two{
+        right:5%;
+    }
+
+    .crystal.three{
+        right:2%;
+    }
+
+    footer{
+        padding-top:25px;
+    }
+
+    .footer-container{
+        width:88%;
+        grid-template-columns:1fr 1fr;
+        gap:25px 15px;
+    }
+
+    .footer-about{
+        grid-column:1 / -1;
+    }
+
+    .footer-about p{
+        max-width:100%;
+    }
+
+    .footer-bottom{
+        width:88%;
+
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:8px;
+    }
+
+    .footer-links{
+        gap:8px;
+        flex-wrap:wrap;
+    }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:380px){
+
+    .benefits-box{
+        grid-template-columns:1fr;
+    }
+
+    .benefit{
+        border-right:none !important;
+        border-bottom:1px solid #ddd;
+    }
+
+    .benefit:last-child{
+        border-bottom:none;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-about{
+        grid-column:auto;
+    }
+
+    .footer-bottom{
+        font-size:6px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================
+     COMMUNITY
+===================================== -->
+
+<section class="community">
+
+
+    <div class="crystal one"></div>
+    <div class="crystal two"></div>
+    <div class="crystal three"></div>
+
+
+    <div class="community-content">
+        <br>
+        <br>
+
+        <h2>
+            Join Our Crystal Community
+        </h2>
+
+        <p>
+            Get exclusive offers, new arrivals and crystal tips straight to your inbox.
+        </p>
+
+<br>
+        <form
+            class="subscribe"
+            id="subscribeForm"
+        >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+<br>
+<br>
+<br>
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- ABOUT -->
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+
+                <div class="logo-icon">
+                    ♢
+                </div>
+
+                <div>
+
+                    <h2>
+                        Divinehealingworld
+                    </h2>
+
+                    <span>
+                        Nature's Energy. Your Style
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                At Divinehealingworld, we bring you fine natural
+                crystals and handcrafted jewellery to help you
+                connect with your inner peace and positive energy.
+            </p>
+
+
+            <div class="socials">
+
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    ◎
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    p
+                </a>
+
+                <a href="#" aria-label="Youtube">
+                    ▶
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- SHOP -->
+
+        <div class="footer-column">
+
+            <h3>
+               Our Services
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="reiki-healing.html">Reiki Healing</a>
+                </li>
+
+                <li>
+                    <a href="akashic-records.html">Akashic Records</a>
+                </li>
+
+                <li>
+                    <a href="animal-communication.html">Animal Communication</a>
+                </li>
+
+                <li>
+                    <a href="tarot-reading.html">Tarot Reading</a>
+                </li>
+
+                <li>
+                    <a href="home-energy.html">Home Energy</a>
+                </li>
+
+                <li>
+                    <a href="psychic-mediumShip.php_.html">Psychic MediumShip</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Contact Us
+            </h3>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ✉
+                </div>
+
+                support@Divinehealingworld.com
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                +91 9711766949
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ●
+                </div>
+
+                India
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="footer-bottom">
+
+        <div>
+            © 2026 Divinehealingworld. All rights reserved.
+        </div>
+          <div>
+    Developed By
+    <a
+        href="https://www.google.com/search?q=parvez3737"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="text-decoration: none; color: inherit;"
+    >
+        Parvez Ahmad (Parvez3737)
+    </a>
+</div>
+
+        <div class="footer-links">
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Shipping Policy
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+/* =====================================
+   SCROLL REVEAL
+===================================== */
+
+const cards = document.querySelectorAll(".review-card");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry, index) => {
+
+            if(entry.isIntersecting){
+
+                setTimeout(() => {
+
+                    entry.target.classList.add("show");
+
+                }, index * 180);
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+    {
+        threshold:0.15
+    }
+);
+
+
+cards.forEach(card => {
+
+    observer.observe(card);
+
+});
+
+
+/* =====================================
+   NEWSLETTER
+===================================== */
+
+const form = document.getElementById("subscribeForm");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    if(!email){
+        return;
+    }
+
+    const button =
+        form.querySelector("button");
+
+    const oldText =
+        button.textContent;
+
+    button.textContent = "Subscribed ✓";
+
+    button.style.background = "#493052";
+
+    setTimeout(() => {
+
+        button.textContent = oldText;
+
+        button.style.background = "";
+
+        form.reset();
+
+    }, 2500);
+
+});
+
+
+/* =====================================
+   MOUSE PARALLAX CRYSTALS
+===================================== */
+
+const crystals =
+    document.querySelectorAll(".crystal");
+
+document.addEventListener("mousemove", function(e){
+
+    const x =
+        (window.innerWidth / 2 - e.clientX) / 60;
+
+    const y =
+        (window.innerHeight / 2 - e.clientY) / 60;
+
+    crystals.forEach((crystal, index) => {
+
+        const amount =
+            (index + 1) * 0.6;
+
+        crystal.style.marginLeft =
+            `${x * amount}px`;
+
+        crystal.style.marginTop =
+            `${y * amount}px`;
+
+    });
+
+});
+
+
+/* =====================================
+   REVIEW CARD HOVER
+===================================== */
+
+cards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+
+        card.style.zIndex = "5";
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.zIndex = "";
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

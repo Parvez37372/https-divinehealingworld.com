@@ -1,0 +1,3646 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from https://divinehealingworld.com/akashic-records.php by HTTrack Website Copier/3.x [XR&CO], Wed, 25 Nov 2026 08:05:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Divinehealingworld
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com/"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com/"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --purple: #382342;
+            --dark-purple: #24142e;
+            --pink: #b61491;
+            --text: #302632;
+            --muted: #817782;
+            --border: #ebe7ec;
+            --light: #faf8fb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            color: var(--text);
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .top-bar {
+            height: 29px;
+            background: var(--pink);
+            color: #fff;
+            padding: 0 5.5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 10px;
+        }
+
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .top-bar-item i {
+            font-size: 11px;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            height: 78px;
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            z-index: 1000;
+        }
+
+        .header-container {
+            width: 89%;
+            max-width: 1440px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            min-width: 235px;
+        }
+
+        .logo-symbol {
+            width: 43px;
+            height: 43px;
+            position: relative;
+        }
+
+        .logo-symbol img {
+            width: 50px;
+            height: -10px;
+            object-fit: contain;
+        }
+
+        .logo-content h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 1;
+            color: var(--purple);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-content p {
+            font-size: 10px;
+            color: #77707b;
+            margin-top: 4px;
+            letter-spacing: .35px;
+        }
+
+
+        /* NAVIGATION */
+
+        .navigation {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 34px;
+        }
+
+        .nav-link {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-size: 12px;
+            color: #302932;
+            transition: color .25s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 19px;
+            width: 0;
+            height: 2px;
+            background: var(--purple);
+            transition: width .3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--purple);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .shop-link {
+            gap: 6px;
+        }
+
+        .shop-link i {
+            font-size: 8px;
+        }
+
+
+        /* SHOP DROPDOWN */
+
+        .shop-dropdown {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .shop-menu {
+            display: none;
+            list-style: none;
+            padding: 8px 0;
+            margin: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 230px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            box-shadow: 0 10px 28px rgba(36,20,46,.12);
+            z-index: 9999;
+        }
+
+        .shop-dropdown:hover .shop-menu {
+            display: block;
+        }
+
+        .shop-dropdown:hover .shop-link i {
+            transform: rotate(180deg);
+        }
+
+        .shop-link i {
+            transition: .25s ease;
+        }
+
+        .shop-menu li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 15px;
+            color: #333;
+            font-size: 13px;
+            transition: .2s ease;
+        }
+
+        .shop-menu li a:hover {
+            background: #faf5fb;
+            color: var(--pink);
+        }
+
+        .shop-menu li a i {
+            width: 17px;
+            color: var(--purple);
+            font-size: 12px;
+        }
+
+
+        /* HEADER ACTIONS */
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .header-icon {
+            border: 0;
+            background: transparent;
+            color: #302632;
+            font-size: 17px;
+            width: 20px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .header-icon:hover {
+            color: var(--purple);
+        }
+
+        .badge-icon span {
+            position: absolute;
+            top: -5px;
+            right: -8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--purple);
+            color: #fff;
+            font-size: 8px;
+            font-weight: 600;
+        }
+
+
+        /* MOBILE */
+
+        .mobile-menu-button {
+            display: none;
+            border: 0;
+            background: transparent;
+            font-size: 19px;
+            color: var(--purple);
+            cursor: pointer;
+        }
+
+        .mobile-navigation {
+            display: none;
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 10px 5%;
+            position: relative;
+            z-index: 999;
+            box-shadow: 0 8px 20px rgba(0,0,0,.06);
+        }
+
+        .mobile-navigation.show {
+            display: block;
+        }
+
+        .mobile-navigation a {
+            display: block;
+            padding: 13px 5px;
+            border-bottom: 1px solid #f0edf1;
+            font-size: 13px;
+        }
+
+        .mobile-shop {
+            border-bottom: 1px solid #f0edf1;
+        }
+
+        .mobile-shop-toggle {
+            width: 100%;
+            padding: 13px 5px;
+            border: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: inherit;
+            font-size: 13px;
+            color: #302932;
+            cursor: pointer;
+        }
+
+        .mobile-shop-toggle i {
+            font-size: 10px;
+            transition: transform .25s ease;
+        }
+
+        .mobile-shop.open .mobile-shop-toggle i {
+            transform: rotate(180deg);
+        }
+
+        .mobile-shop-menu {
+            display: none;
+            padding: 0 0 5px 14px;
+        }
+
+        .mobile-shop.open .mobile-shop-menu {
+            display: block;
+        }
+
+        .mobile-shop-menu a {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 10px 5px;
+            border-bottom: 0;
+            font-size: 12px;
+            color: #625a63;
+        }
+
+        .mobile-shop-menu i {
+            width: 14px;
+            font-size: 11px;
+        }
+
+
+        /* =========================
+           SHOP PRODUCTS PAGE
+        ========================= */
+
+
+        .shop-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .shop-heading h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 34px;
+            color: var(--purple);
+            margin-bottom: 8px;
+        }
+
+        .shop-heading p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* PRODUCT CARD */
+
+        .products-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .product-card {
+            display: grid;
+            grid-template-columns: 230px 1fr;
+            gap: 25px;
+            padding: 18px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            box-shadow: 0 7px 24px rgba(36,20,46,.05);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(36,20,46,.09);
+        }
+
+        .product-image-wrap {
+            width: 230px;
+            height: 230px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #faf8fb;
+        }
+
+        .product-image-wrap img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5px 10px 5px 0;
+        }
+
+        .product-title {
+            color: var(--pink);
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+        }
+
+        .product-name {
+            font-family: "Playfair Display", serif;
+            color: var(--purple);
+            font-size: 27px;
+            font-weight: 600;
+            margin-bottom: 11px;
+        }
+
+        .product-description {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin-bottom: 18px;
+        }
+
+        .product-bottom {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .product-price {
+            color: var(--purple);
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .add-cart-btn {
+            border: 0;
+            border-radius: 8px;
+            padding: 11px 19px;
+            background: var(--purple);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: .25s ease;
+        }
+
+        .add-cart-btn:hover {
+            background: var(--pink);
+        }
+
+        .empty-products {
+            text-align: center;
+            padding: 55px 20px;
+            border: 1px dashed #ddd5df;
+            border-radius: 14px;
+            color: var(--muted);
+        }
+
+        .empty-products i {
+            font-size: 35px;
+            color: #c7bdc9;
+            margin-bottom: 12px;
+        }
+
+        .all-categories {
+            display: flex;
+            justify-content: center;
+            gap: 9px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .category-pill {
+            padding: 8px 14px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 11px;
+            color: var(--purple);
+            background: #fff;
+        }
+
+        .category-pill:hover {
+            background: #faf5fb;
+            border-color: #d9c9dc;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1000px) {
+
+            .header-container {
+                width: 92%;
+            }
+
+            .navigation {
+                gap: 20px;
+            }
+
+            .nav-link {
+                font-size: 11px;
+            }
+
+            .logo {
+                min-width: 205px;
+            }
+
+            .logo-content h1 {
+                font-size: 22px;
+            }
+
+            .header-actions {
+                gap: 13px;
+            }
+
+            .shop-page {
+                width: 92%;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .top-bar {
+                display: none;
+            }
+
+            .header {
+                height: 70px;
+            }
+
+            .navigation {
+                display: none;
+            }
+
+            .header-container {
+                width: 92%;
+            }
+
+            .header-actions {
+                gap: 13px;
+            }
+
+            .header-actions .header-icon:nth-child(1),
+            .header-actions .header-icon:nth-child(2) {
+                display: none;
+            }
+
+            .mobile-menu-button {
+                display: flex;
+            }
+
+            .logo {
+                min-width: auto;
+            }
+
+            .logo-content h1 {
+                font-size: 21px;
+            }
+
+            .logo-content p {
+                font-size: 7px;
+            }
+
+            .shop-page {
+                width: 92%;
+                padding-top: 38px;
+            }
+
+            .shop-heading h2 {
+                font-size: 28px;
+            }
+
+            .product-card {
+                grid-template-columns: 1fr;
+                gap: 17px;
+            }
+
+            .product-image-wrap {
+                width: 100%;
+                height: 260px;
+            }
+
+            .product-info {
+                padding: 0 4px 5px;
+            }
+
+            .product-name {
+                font-size: 23px;
+            }
+
+        }
+
+        @media (max-width: 420px) {
+
+            .header-container {
+                width: 90%;
+            }
+
+            .header-actions {
+                gap: 9px;
+            }
+
+            .product-image-wrap {
+                height: 230px;
+            }
+
+            .product-bottom {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<!--<div class="top-bar">
+
+    <div class="top-bar-item">
+        <i class="fa-solid fa-truck"></i>
+        <span>Free Shipping All Over India</span>
+    </div>
+
+    <div class="top-bar-item">
+        <i class="fa-regular fa-gem"></i>
+        <span>100% Natural & Authentic Crystals</span>
+    </div>
+
+    <div class="top-bar-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Easy Returns & Secure Payments</span>
+    </div>
+
+</div>-->
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <div class="header-container">
+
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-symbol">
+
+                <img
+                    src="../vectorjungal.com/files/preview/1280x977/11724061489x7dnzumlkkkdctwc1jp9s6hmcc7hkelbcywsoq1ks90ylksgcvupex8nfc0knms8robegbblqtofo2ckk2viwtbtpyhxqomm1o4i.html"
+                    alt="Divinehealingworld"
+                >
+
+            </div>
+
+            <div class="logo-content">
+
+                <h1>Divine Healing world</h1>
+
+                <p>Nature's Energy. Your Style</p>
+
+            </div>
+
+        </a>
+
+
+        <nav class="navigation">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+<a href="reiki-healing.html" class="nav-link">
+                Reiki Healing
+            
+
+            <a href="tarot-reading.html" class="nav-link">
+                Tarot Reading
+            </a>
+
+            <a href="akashic-records.html" class="nav-link">
+                Akashic Records
+            </a>
+
+            <a href="animal-communication.html" class="nav-link">
+                Animal Communication
+            </a>
+
+  <a href="psychic-mediumship.html" class="nav-link">
+                Psychic Mediumship
+            </a>                          <div class="shop-dropdown">
+
+              <!---  <a
+                    href="#"
+                    class="nav-link shop-link "
+                    aria-haspopup="true"
+                >
+                    Shop
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+
+                <ul class="shop-menu">
+                    /
+                        
+                            <li>
+
+                                <a
+                                    href="shop-category-products.php?category_id=3"
+                                >
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                    Crystals
+                                </a>
+
+                            </li>
+
+                        
+                            <li>
+
+                                <a
+                                    href="shop-category-products.php?category_id=4"
+                                >
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                    Rings
+                                </a>
+
+                            </li>
+
+                        
+                    
+                </ul>---->
+
+            </div>
+
+
+        </nav>
+
+
+        <div class="header-actions">
+         <style>
+         .session-btn
+         {
+             background:black;
+             color:#fff;
+             font-size:15px;
+             font-weight:bold;
+             border:solid 1px white;
+             padding:10px;
+             border-radius:15px;
+         }
+         
+         </style>
+            <button class="session-btn"><a href="book-your-session.html">Book Session</a></button>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     MOBILE NAV
+========================= -->
+
+<nav
+    class="mobile-navigation"
+    id="mobileNavigation"
+>
+
+    <a href="index-2.html">
+        Home
+    </a>
+
+
+    <div class="mobile-shop">
+
+        <button
+            type="button"
+            class="mobile-shop-toggle"
+            id="mobileShopToggle"
+        >
+
+            <span>
+                Shop
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </button>
+
+
+        <div
+            class="mobile-shop-menu"
+            id="mobileShopMenu"
+        >
+
+            <a href="products.html">
+
+                <i class="fa-solid fa-box"></i>
+
+                Products
+
+            </a>
+
+
+            <a href="best-sellers.html">
+
+                <i class="fa-solid fa-star"></i>
+
+                Best Sellers
+
+            </a>
+
+
+            
+                <a
+                    href="shop-category-productsd7b8.html?category_id=3"
+                >
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Crystals
+                </a>
+
+            
+                <a
+                    href="shop-category-products9738.html?category_id=4"
+                >
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Rings
+                </a>
+
+            
+        </div>
+
+    </div>
+
+
+    <a href="about.html">
+        About Us
+    </a>
+
+    <a href="#">
+        Tarot Reading
+    </a>
+
+    <a href="#">
+        Akashic Records
+    </a>
+
+    <a href="#">
+        Animal Communication
+    </a>
+
+</nav>
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<main class="shop-page">
+
+    
+
+</main>
+
+
+<script>
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const mobileNavigation =
+        document.getElementById("mobileNavigation");
+
+    const menuIcon =
+        menuButton
+            ? menuButton.querySelector("i")
+            : null;
+
+
+    if (
+        menuButton &&
+        mobileNavigation &&
+        menuIcon
+    ) {
+
+        menuButton.addEventListener("click", () => {
+
+            mobileNavigation.classList.toggle("show");
+
+            if (
+                mobileNavigation.classList.contains("show")
+            ) {
+
+                menuIcon.classList.remove("fa-bars");
+                menuIcon.classList.add("fa-xmark");
+
+            } else {
+
+                menuIcon.classList.remove("fa-xmark");
+                menuIcon.classList.add("fa-bars");
+
+            }
+
+        });
+
+    }
+
+
+    /* =========================
+       MOBILE SHOP
+    ========================= */
+
+    const mobileShopToggle =
+        document.getElementById("mobileShopToggle");
+
+    const mobileShop =
+        document.querySelector(".mobile-shop");
+
+
+    if (
+        mobileShopToggle &&
+        mobileShop
+    ) {
+
+        mobileShopToggle.addEventListener(
+            "click",
+            function () {
+
+                mobileShop.classList.toggle("open");
+
+            }
+        );
+
+    }
+
+
+    /* =========================
+       ADD TO CART
+       UI READY
+    ========================= */
+
+    document
+        .querySelectorAll(".add-cart-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const productName =
+                        this.dataset.productName || "Product";
+
+                    alert(
+                        productName +
+                        " added to cart."
+                    );
+
+                }
+            );
+
+        });
+
+
+    /* =========================
+       CLOSE MOBILE MENU
+    ========================= */
+
+    document
+        .querySelectorAll(".mobile-navigation a")
+        .forEach(link => {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    if (mobileNavigation) {
+                        mobileNavigation.classList.remove("show");
+                    }
+
+                    if (menuIcon) {
+
+                        menuIcon.classList.remove("fa-xmark");
+                        menuIcon.classList.add("fa-bars");
+
+                    }
+
+                    if (mobileShop) {
+                        mobileShop.classList.remove("open");
+                    }
+
+                }
+            );
+
+        });
+
+</script>
+
+</body>
+
+<!-- Mirrored from https://divinehealingworld.com/akashic-records.php by HTTrack Website Copier/3.x [XR&CO], Wed, 25 Nov 2026 08:05:22 GMT -->
+</html>
+<main class="akw-page">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+.akw-page {
+    --akw-brown: #493126;
+    --akw-brown2: #73533e;
+    --akw-gold: #bd925c;
+    --akw-gold-light: #e8cda2;
+    --akw-cream: #fbf7f1;
+    --akw-text: #60554d;
+    --akw-border: #eee2d3;
+    background: #fff;
+    color: var(--akw-text);
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+}
+
+.akw-page * { box-sizing: border-box; }
+
+.akw-page img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.akw-page a { text-decoration: none; }
+
+.akw-page h1,
+.akw-page h2,
+.akw-page h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--akw-brown);
+    line-height: 1.3;
+    margin: 0 0 16px;
+}
+
+.akw-page p {
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0 0 15px;
+}
+
+.akw-container {
+    width: min(1160px, 91%);
+    margin: auto;
+}
+
+.akw-eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 2.8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--akw-gold);
+    margin-bottom: 15px;
+}
+
+.akw-heading {
+    max-width: 760px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.akw-heading h2 {
+    font-size: clamp(28px, 3.2vw, 40px);
+}
+
+.akw-heading p {
+    max-width: 680px;
+    margin: auto;
+}
+
+.akw-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 25px;
+    background: var(--akw-gold);
+    color: #fff !important;
+    border: 1px solid var(--akw-gold);
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.akw-button:hover {
+    background: #a77a46;
+    border-color: #a77a46;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px #21140e26;
+}
+
+.akw-button-outline {
+    background: transparent;
+    border-color: var(--akw-gold);
+    color: var(--akw-brown) !important;
+}
+
+.akw-button-outline:hover {
+    background: var(--akw-gold);
+    color: #fff !important;
+}
+
+/* SCROLL REVEAL */
+
+.akw-page .akw-reveal {
+    opacity: 0;
+    transform: translateY(27px);
+    transition: opacity .75s ease, transform .75s ease;
+}
+
+.akw-page .akw-reveal.akw-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.akw-page .akw-delay1 { transition-delay: .12s; }
+.akw-page .akw-delay2 { transition-delay: .22s; }
+.akw-page .akw-delay3 { transition-delay: .32s; }
+
+@keyframes akw-entrance {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes akw-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+}
+
+@keyframes akw-glow {
+    0%, 100% { box-shadow: 0 0 0 0 #dfbc8040; }
+    50% { box-shadow: 0 0 0 10px #dfbc8000; }
+}
+
+/* HERO */
+
+.akw-hero {
+    position: relative;
+    min-height: 525px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(33, 21, 16, .94) 0%,
+            rgba(48, 31, 23, .84) 47%,
+            rgba(42, 27, 20, .20) 100%
+        ),
+        url('abanner.jpeg')
+        center 48% / cover no-repeat;
+}
+
+.akw-hero-content {
+    max-width: 700px;
+    padding: 75px 0;
+    animation: akw-entrance .9s ease both;
+}
+
+.akw-hero .akw-eyebrow { color: #e7c38e; }
+
+.akw-hero h1 {
+    color: #fff;
+    font-size: clamp(37px, 5.2vw, 61px);
+    line-height: 1.16;
+    margin-bottom: 22px;
+}
+
+.akw-hero h1 span { color: #e8c38b; }
+
+.akw-hero h2 {
+    color: #f2dfc5;
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(17px, 2vw, 21px);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.akw-hero p {
+    color: #f2e9e1;
+    max-width: 610px;
+}
+
+.akw-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 26px;
+}
+
+.akw-hero .akw-button-outline {
+    color: #fff !important;
+    border-color: #ffffff80;
+}
+
+.akw-hero .akw-button-outline:hover {
+    background: #ffffff18;
+    border-color: #fff;
+}
+
+/* HERO BENEFITS */
+
+.akw-hero-strip {
+    background: #38251e;
+    border-top: 1px solid #ffffff18;
+    padding: 21px 0;
+}
+
+.akw-strip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.akw-strip-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #fff6eb;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.akw-strip-icon {
+    display: grid;
+    place-items: center;
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    border: 1px solid #cba875;
+    border-radius: 50%;
+    color: #e8c38b;
+    font-size: 19px;
+}
+
+/* INTRODUCTION */
+
+.akw-intro {
+    padding: 85px 0;
+    background: var(--akw-cream);
+}
+
+.akw-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 62px;
+    align-items: center;
+}
+
+.akw-image-frame {
+    position: relative;
+}
+
+.akw-image-frame::before {
+    content: "";
+    position: absolute;
+    inset: -12px 12px 12px -12px;
+    border: 1px solid var(--akw-gold);
+    border-radius: 12px;
+}
+
+.akw-intro-image {
+    position: relative;
+    z-index: 1;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px #49312619;
+}
+
+.akw-image-note {
+    position: absolute;
+    z-index: 2;
+    right: -18px;
+    bottom: 22px;
+    width: min(245px, 80%);
+    padding: 18px 20px;
+    border-radius: 9px;
+    background: #fffdfa;
+    box-shadow: 0 8px 30px #49312619;
+}
+
+.akw-image-note strong {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    color: var(--akw-brown);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.akw-image-note span {
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.akw-intro h2 {
+    font-size: clamp(29px, 3.4vw, 41px);
+}
+
+.akw-intro .akw-eyebrow { color: #987147; }
+
+.akw-intro-points {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.akw-intro-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px;
+    background: #fff;
+    border: 1px solid var(--akw-border);
+    border-radius: 8px;
+    color: var(--akw-brown);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.akw-point-icon {
+    flex-shrink: 0;
+    width: 33px;
+    height: 33px;
+    display: grid;
+    place-items: center;
+    background: #f5e8d5;
+    color: #8b6740;
+    border-radius: 50%;
+    font-size: 17px;
+}
+
+/* WHAT ARE AKASHIC RECORDS */
+
+.akw-meaning {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.akw-meaning-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.akw-meaning h2 { font-size: clamp(28px, 3vw, 37px); }
+
+.akw-meaning-image {
+    height: 350px;
+    border-radius: 12px;
+}
+
+.akw-meaning-quote {
+    padding: 23px 25px;
+    margin-top: 22px;
+    border-left: 3px solid var(--akw-gold);
+    background: #fbf6ef;
+    border-radius: 0 8px 8px 0;
+    color: var(--akw-brown2);
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* BENEFITS */
+
+.akw-benefits {
+    padding: 85px 0;
+    background: #fbf7f1;
+}
+
+.akw-benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.akw-benefit-card {
+    position: relative;
+    padding: 28px 25px;
+    border: 1px solid var(--akw-border);
+    border-radius: 12px;
+    background: #fff;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.akw-benefit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 34px #49312612;
+}
+
+.akw-benefit-icon {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #f5e7d1;
+    color: #8b6740;
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+.akw-benefit-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.akw-benefit-card p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.akw-card-number {
+    position: absolute;
+    top: 25px;
+    right: 24px;
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    color: #e9ddce;
+}
+
+/* FOUNDER */
+
+.akw-founder {
+    padding: 82px 0;
+    background: #fff;
+}
+
+.akw-founder-panel {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    align-items: center;
+    gap: 48px;
+    padding: 38px;
+    background: var(--akw-cream);
+    border: 1px solid var(--akw-border);
+    border-radius: 16px;
+}
+
+.akw-founder-image {
+    height: 355px;
+    border-radius: 10px;
+}
+
+.akw-founder h2 { font-size: clamp(28px, 3vw, 39px); }
+
+.akw-founder-role {
+    color: #a37a4b;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.akw-founder-note {
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    margin-top: 23px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    color: var(--akw-brown2);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.akw-founder-note span {
+    color: var(--akw-gold);
+    font-size: 23px;
+}
+
+/* PROCESS */
+
+.akw-process {
+    padding: 82px 0;
+    background:
+        linear-gradient(110deg, #39271ff5, #634735ed),
+        url('https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1700&q=85')
+        center / cover;
+}
+
+.akw-process .akw-heading h2 { color: #fff; }
+.akw-process .akw-heading p { color: #f0e4d8; }
+.akw-process .akw-eyebrow { color: #e5c28e; }
+
+.akw-step-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.akw-step {
+    padding: 28px 20px;
+    border: 1px solid #ffffff35;
+    border-radius: 12px;
+    background: #ffffff0b;
+    transition: .3s ease;
+}
+
+.akw-step:hover {
+    transform: translateY(-6px);
+    background: #ffffff15;
+}
+
+.akw-step-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.akw-step-icon {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #fffaf3;
+    color: #73533e;
+    font-size: 23px;
+    animation: akw-float 4s ease-in-out infinite;
+}
+
+.akw-step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 31px;
+    color: #d6b581;
+    opacity: .8;
+}
+
+.akw-step h3 {
+    color: #f3d7a9;
+    font-size: 19px;
+}
+
+.akw-step p {
+    color: #f1e5da;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* WHO CAN BENEFIT */
+
+.akw-audience {
+    padding: 82px 0;
+    background: #fff;
+}
+
+.akw-audience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.akw-audience-image {
+    height: 390px;
+    border-radius: 12px;
+}
+
+.akw-audience h2 { font-size: clamp(29px, 3vw, 39px); }
+
+.akw-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+    display: grid;
+    gap: 14px;
+}
+
+.akw-check-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.akw-check {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #f3e5cf;
+    color: #80603c;
+    font-weight: 700;
+}
+
+/* FINAL CTA */
+
+.akw-cta {
+    position: relative;
+    padding: 85px 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(38, 24, 18, .94),
+            rgba(60, 39, 27, .77)
+        ),
+        url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=85')
+        center / cover no-repeat;
+}
+
+.akw-cta-inner {
+    max-width: 790px;
+    margin: auto;
+    text-align: center;
+}
+
+.akw-cta h2 {
+    color: #fff;
+    font-size: clamp(32px, 4vw, 47px);
+}
+
+.akw-cta .akw-eyebrow { color: #e9c990; }
+
+.akw-cta p {
+    max-width: 680px;
+    margin: 0 auto 23px;
+    color: #f1e7df;
+}
+
+.akw-cta-tagline {
+    display: block;
+    color: #f1d6ad;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 27px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+    .akw-benefit-grid { grid-template-columns: repeat(2, 1fr); }
+    .akw-step-grid { grid-template-columns: repeat(2, 1fr); }
+    .akw-intro-grid,
+    .akw-meaning-grid,
+    .akw-audience-grid { gap: 35px; }
+    .akw-founder-panel { gap: 28px; padding: 26px; }
+}
+
+@media (max-width: 650px) {
+    .akw-container { width: 90%; }
+
+    .akw-hero {
+        min-height: 540px;
+        background-position: 62% center;
+    }
+
+    .akw-hero-content { padding: 65px 0; }
+
+    .akw-hero h1 { font-size: 37px; }
+
+    .akw-hero h2 { font-size: 16px; }
+
+    .akw-hero p { font-size: 13px; }
+
+    .akw-hero-actions { gap: 10px; }
+
+    .akw-button { padding: 13px 18px; font-size: 12px; }
+
+    .akw-strip-grid { grid-template-columns: 1fr; gap: 13px; }
+
+    .akw-strip-item { justify-content: flex-start; }
+
+    .akw-intro,
+    .akw-meaning,
+    .akw-benefits,
+    .akw-founder,
+    .akw-process,
+    .akw-audience,
+    .akw-cta { padding: 55px 0; }
+
+    .akw-intro-grid,
+    .akw-meaning-grid,
+    .akw-founder-panel,
+    .akw-audience-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .akw-intro-image { height: 290px; }
+
+    .akw-image-note { right: 10px; }
+
+    .akw-intro-points { grid-template-columns: 1fr 1fr; }
+
+    .akw-intro-point { padding: 10px 8px; font-size: 11px; }
+
+    .akw-meaning-image,
+    .akw-audience-image { height: 280px; }
+
+    .akw-benefit-grid { grid-template-columns: 1fr; gap: 14px; }
+
+    .akw-benefit-card { padding: 24px 21px; }
+
+    .akw-founder-panel { padding: 17px; }
+
+    .akw-founder-image { height: 280px; }
+
+    .akw-step-grid { grid-template-columns: 1fr; }
+
+    .akw-step { padding: 23px; }
+
+    .akw-heading { margin-bottom: 30px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .akw-page *,
+    .akw-page *::before,
+    .akw-page *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+
+    .akw-page .akw-reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+</style>
+
+<!-- HERO SECTION -->
+
+<section class="akw-hero">
+    <div class="akw-container">
+        <div class="akw-hero-content">
+
+            <span class="akw-eyebrow">
+                Divine Healing World · Soul Discovery
+            </span>
+
+            <h1>
+                Akashic Records Reading –
+                <span>Explore the Wisdom of Your Soul</span>
+            </h1>
+
+            <h2>
+                Discover Deeper Meaning, Understand Life Patterns,
+                and Connect With Your Inner Wisdom
+            </h2>
+
+            <p>
+                Have you ever wondered why certain patterns keep appearing in
+                your life? Explore your questions, reflect on recurring
+                experiences, and consider new perspectives on your personal
+                journey through a personalized Akashic Records Reading.
+            </p>
+
+            <div class="akw-hero-actions">
+                <a href="#akw-booking" class="akw-button">
+                    Explore Your Soul Journey <span>→</span>
+                </a>
+
+                <a href="#akw-meaning" class="akw-button akw-button-outline">
+                    Discover Akashic Records
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- BENEFIT STRIP -->
+
+<section class="akw-hero-strip">
+    <div class="akw-container akw-strip-grid">
+
+        <div class="akw-strip-item">
+            <span class="akw-strip-icon">✧</span>
+            Personalized Spiritual Exploration
+        </div>
+
+        <div class="akw-strip-item">
+            <span class="akw-strip-icon">♡</span>
+            Compassionate &amp; Respectful Guidance
+        </div>
+
+        <div class="akw-strip-item">
+            <span class="akw-strip-icon">☼</span>
+            Reflection &amp; Self-Discovery
+        </div>
+
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+
+<section class="akw-intro">
+    <div class="akw-container akw-intro-grid">
+
+        <div class="akw-image-frame akw-reveal">
+            <img
+                class="akw-intro-image"
+                src="askasma.jpeg"
+                alt="Peaceful spiritual setting for reflection"
+                loading="lazy"
+            >
+
+            <div class="akw-image-note">
+                <strong>Reconnect With Yourself</strong>
+                <span>
+                    Make space for reflection, awareness and personal growth.
+                </span>
+            </div>
+        </div>
+
+        <div class="akw-reveal akw-delay1">
+
+            <span class="akw-eyebrow">A Journey Within</span>
+
+            <h2>Discover New Perspectives on Your Life Journey</h2>
+
+            <p>
+                At <strong>Divine Healing World</strong>, Akashic Records Reading
+                offers a spiritual space for self-exploration, reflection,
+                and personal growth. Rooted in the spiritual concept of the
+                Akashic Records as a record of the soul's journey, this practice
+                invites you to explore meaningful questions about your life.
+            </p>
+
+            <p>
+                Through a personalized reading, you can reflect on recurring
+                themes, explore personal challenges, and consider new
+                possibilities for moving forward with greater awareness
+                and intention.
+            </p>
+
+            <div class="akw-intro-points">
+                <div class="akw-intro-point">
+                    <span class="akw-point-icon">✧</span>
+                    Explore Life Patterns
+                </div>
+
+                <div class="akw-intro-point">
+                    <span class="akw-point-icon">♡</span>
+                    Reflect on Relationships
+                </div>
+
+                <div class="akw-intro-point">
+                    <span class="akw-point-icon">☼</span>
+                    Personal Development
+                </div>
+
+                <div class="akw-intro-point">
+                    <span class="akw-point-icon">◎</span>
+                    Spiritual Awareness
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHAT ARE AKASHIC RECORDS -->
+
+<section class="akw-meaning" id="akw-meaning">
+    <div class="akw-container akw-meaning-grid">
+
+        <div class="akw-reveal">
+
+            <span class="akw-eyebrow">Understanding the Practice</span>
+
+            <h2>What Are the Akashic Records?</h2>
+
+            <p>
+                The Akashic Records are described in certain spiritual
+                traditions as an energetic or spiritual record of the soul's
+                experiences, lessons, and journey.
+            </p>
+
+            <p>
+                An Akashic Records Reading is a spiritual practice intended
+                to explore questions about your life, relationships, personal
+                development, and spiritual growth. It offers an opportunity
+                to reflect on experiences that may feel repetitive or difficult
+                to understand and consider their possible meaning within your
+                personal journey.
+            </p>
+
+            <p>
+                Each session is unique, shaped by your questions, intentions,
+                and the areas of life you wish to explore.
+            </p>
+
+            <div class="akw-meaning-quote">
+                "Sometimes a new perspective helps us understand our experiences
+                with greater compassion and awareness."
+            </div>
+
+        </div>
+
+        <div class="akw-reveal akw-delay1">
+            <img
+                class="akw-meaning-image"
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                alt="Starry night sky symbolizing reflection and exploration"
+                loading="lazy"
+            >
+        </div>
+
+    </div>
+</section>
+
+<!-- HOW IT CAN SUPPORT YOU -->
+
+<section class="akw-benefits">
+    <div class="akw-container">
+
+        <div class="akw-heading akw-reveal">
+            <span class="akw-eyebrow">Explore Your Questions</span>
+
+            <h2>How Can an Akashic Records Reading Support You?</h2>
+
+            <p>
+                Explore different aspects of your personal journey in a
+                thoughtful space for reflection, self-awareness and growth.
+            </p>
+        </div>
+
+        <div class="akw-benefit-grid">
+
+            <article class="akw-benefit-card akw-reveal">
+                <span class="akw-card-number">01</span>
+                <div class="akw-benefit-icon">⟳</div>
+
+                <h3>Understanding Recurring Life Patterns</h3>
+
+                <p>
+                    Do you notice similar situations or challenges repeating
+                    in your life? A reading can provide a reflective space
+                    to explore these patterns, consider their possible
+                    significance, and identify opportunities for personal change.
+                </p>
+            </article>
+
+            <article class="akw-benefit-card akw-reveal akw-delay1">
+                <span class="akw-card-number">02</span>
+                <div class="akw-benefit-icon">♡</div>
+
+                <h3>Exploring Relationships &amp; Connections</h3>
+
+                <p>
+                    Relationships can bring important lessons and opportunities
+                    for growth. Explore emotional themes, personal expectations,
+                    and recurring dynamics that may influence your connections
+                    with others.
+                </p>
+            </article>
+
+            <article class="akw-benefit-card akw-reveal akw-delay2">
+                <span class="akw-card-number">03</span>
+                <div class="akw-benefit-icon">✧</div>
+
+                <h3>Discovering Your Life Purpose</h3>
+
+                <p>
+                    Reflect on your values, aspirations and spiritual interests
+                    while exploring what feels meaningful to you and the
+                    direction you wish to take in life.
+                </p>
+            </article>
+
+            <article class="akw-benefit-card akw-reveal">
+                <span class="akw-card-number">04</span>
+                <div class="akw-benefit-icon">❋</div>
+
+                <h3>Emotional Reflection &amp; Personal Growth</h3>
+
+                <p>
+                    Consider past experiences, personal beliefs and opportunities
+                    to move forward. A different perspective may help you
+                    approach your experiences with greater compassion.
+                </p>
+            </article>
+
+            <article class="akw-benefit-card akw-reveal akw-delay1">
+                <span class="akw-card-number">05</span>
+                <div class="akw-benefit-icon">☼</div>
+
+                <h3>Spiritual Awareness &amp; Self-Discovery</h3>
+
+                <p>
+                    Explore spiritual questions about the soul, personal lessons,
+                    and the deeper meaning you may associate with your life
+                    experiences.
+                </p>
+            </article>
+
+            <article class="akw-benefit-card akw-reveal akw-delay2">
+                <span class="akw-card-number">06</span>
+                <div class="akw-benefit-icon">◎</div>
+
+                <h3>Fresh Perspectives for Your Journey</h3>
+
+                <p>
+                    Take time to reflect on your questions, recognise what
+                    matters to you, and consider the possibilities that
+                    align with your personal intentions.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- MEET THE PRACTITIONER -->
+
+<section class="akw-founder">
+    <div class="akw-container">
+
+        <div class="akw-founder-panel akw-reveal">
+
+            <div>
+                <img
+                    class="akw-founder-image"
+                    src="parvez3737-developed.jpg"
+                    alt="Spiritual practitioner portrait placeholder"
+                    loading="lazy"
+                >
+            </div>
+
+            <div>
+                <span class="akw-eyebrow">Your Spiritual Exploration</span>
+
+                <h2>Akashic Records Reading With Divine Healing World</h2>
+
+                <div class="akw-founder-role">
+                    Kamal Deep Sahni · Akashic Records Expert
+                </div>
+
+                <p>
+                    At Divine Healing World, <strong>Kamal Deep Sahni</strong>
+                    offers personalized sessions designed to create a calm,
+                    respectful, and supportive environment for spiritual
+                    exploration.
+                </p>
+
+                <p>
+                    Every session begins with your intention and the questions
+                    you wish to explore. The reading focuses on reflection,
+                    intuitive interpretation, and perspectives that may help
+                    you better understand your experiences.
+                </p>
+
+                <p>
+                    Our approach respects your individuality and personal
+                    beliefs. The intention is not to dictate your choices
+                    or determine your future, but to support your own process
+                    of understanding, awareness, and growth.
+                </p>
+
+                <div class="akw-founder-note">
+                    <span>✧</span>
+                    <div>
+                        A welcoming space to reflect on your questions,
+                        explore personal meaning, and approach your journey
+                        with an open mind.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SESSION PROCESS -->
+
+<section class="akw-process">
+    <div class="akw-container">
+
+        <div class="akw-heading akw-reveal">
+            <span class="akw-eyebrow">Your Reading Experience</span>
+
+            <h2>What Happens During an Akashic Records Session?</h2>
+
+            <p>
+                A simple, thoughtful process designed around your intentions
+                and the questions you wish to explore.
+            </p>
+        </div>
+
+        <div class="akw-step-grid">
+
+            <article class="akw-step akw-reveal">
+                <div class="akw-step-top">
+                    <div class="akw-step-icon">◎</div>
+                    <span class="akw-step-num">01</span>
+                </div>
+
+                <h3>Set Your Intention</h3>
+
+                <p>
+                    Identify the questions or areas of your life you would
+                    like to explore, such as relationships, recurring patterns,
+                    personal growth, or spiritual direction.
+                </p>
+            </article>
+
+            <article class="akw-step akw-reveal akw-delay1">
+                <div class="akw-step-top">
+                    <div class="akw-step-icon">✧</div>
+                    <span class="akw-step-num">02</span>
+                </div>
+
+                <h3>Begin Your Reading</h3>
+
+                <p>
+                    Kamal Deep Sahni guides the session through the Akashic
+                    Records practice, focusing on your stated intentions
+                    and questions.
+                </p>
+            </article>
+
+            <article class="akw-step akw-reveal akw-delay2">
+                <div class="akw-step-top">
+                    <div class="akw-step-icon">☼</div>
+                    <span class="akw-step-num">03</span>
+                </div>
+
+                <h3>Explore the Insights</h3>
+
+                <p>
+                    Reflect on the themes and interpretations discussed
+                    during the reading and consider how they relate to
+                    your personal experiences.
+                </p>
+            </article>
+
+            <article class="akw-step akw-reveal akw-delay3">
+                <div class="akw-step-top">
+                    <div class="akw-step-icon">♡</div>
+                    <span class="akw-step-num">04</span>
+                </div>
+
+                <h3>Move Forward With Awareness</h3>
+
+                <p>
+                    Take time to reflect on the session and decide which
+                    perspectives or ideas feel meaningful to your journey.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHO CAN BENEFIT -->
+
+<section class="akw-audience">
+    <div class="akw-container akw-audience-grid">
+
+        <div class="akw-reveal">
+            <img
+                class="akw-audience-image"
+                src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                alt="Peaceful sunrise over a natural landscape"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="akw-reveal akw-delay1">
+
+            <span class="akw-eyebrow">Is This Reading Right for You?</span>
+
+            <h2>Who Can Benefit From an Akashic Records Reading?</h2>
+
+            <p>
+                An Akashic Records session may appeal to individuals who
+                are curious about their experiences and interested in
+                exploring their personal or spiritual development.
+            </p>
+
+            <ul class="akw-check-list">
+                <li>
+                    <span class="akw-check">✓</span>
+                    Feel curious about recurring patterns in their lives.
+                </li>
+
+                <li>
+                    <span class="akw-check">✓</span>
+                    Want to explore their spiritual journey.
+                </li>
+
+                <li>
+                    <span class="akw-check">✓</span>
+                    Are reflecting on relationships or personal experiences.
+                </li>
+
+                <li>
+                    <span class="akw-check">✓</span>
+                    Seek a deeper understanding of their values and purpose.
+                </li>
+
+                <li>
+                    <span class="akw-check">✓</span>
+                    Are interested in self-discovery and personal development.
+                </li>
+            </ul>
+
+            <p>
+                You do not need to have all the answers before your session.
+                An open mind and a willingness to reflect are enough to begin.
+            </p>
+
+            <a href="#akw-booking" class="akw-button">
+                Begin Your Journey <span>→</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CALL TO ACTION -->
+
+<section class="akw-cta" id="akw-booking">
+    <div class="akw-container">
+        <div class="akw-cta-inner akw-reveal">
+
+            <span class="akw-eyebrow">Your Journey of Soul Discovery</span>
+
+            <h2>Reconnect With Your Inner Wisdom</h2>
+
+            <p>
+                Your life experiences can offer opportunities for reflection,
+                learning, and growth. An Akashic Records Reading invites you
+                to pause, explore your questions, and consider your journey
+                from a different perspective.
+            </p>
+
+            <p>
+                Connect with Divine Healing World and explore a personalized
+                session with Kamal Deep Sahni.
+            </p>
+
+            <span class="akw-cta-tagline">
+                Explore your journey. Reflect on your experiences.
+                Reconnect with your inner wisdom.
+            </span>
+
+            <!-- Replace # with your actual booking/contact URL -->
+            <a href="#" class="akw-button">
+                Book Your Akashic Records Reading Today <span>→</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<script>
+(function () {
+    const page = document.querySelector('.akw-page');
+
+    if (!page) return;
+
+    const items = page.querySelectorAll('.akw-reveal');
+
+    // Reveal elements smoothly while scrolling
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('akw-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.10,
+            rootMargin: '0px 0px -25px 0px'
+        });
+
+        items.forEach(function (item) {
+            observer.observe(item);
+        });
+    } else {
+        items.forEach(function (item) {
+            item.classList.add('akw-visible');
+        });
+    }
+
+    // Smooth scrolling to page sections
+    page.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            const href = link.getAttribute('href');
+
+            if (!href || href === '#') return;
+
+            const target = page.querySelector(href);
+
+            if (target) {
+                event.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: window.matchMedia(
+                        '(prefers-reduced-motion: reduce)'
+                    ).matches ? 'auto' : 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+})();
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Divinehealingworld - Customer Reviews</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#29202f;
+    overflow-x:hidden;
+}
+
+button,
+input{
+    font-family:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-section{
+    padding:16px 0 10px;
+}
+
+.benefits-box{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+
+    background:linear-gradient(
+        120deg,
+        #faf7f5,
+        #fff,
+        #faf7f5
+    );
+
+    border-radius:10px;
+
+    box-shadow:
+        0 5px 25px rgba(45,20,55,.04);
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    overflow:hidden;
+
+    animation:fadeDown .8s ease;
+}
+
+.benefit{
+    min-height:74px;
+
+    display:flex;
+    align-items:center;
+    gap:13px;
+
+    padding:10px 25px;
+
+    border-right:1px solid #d9d2d8;
+
+    transition:.35s ease;
+}
+
+.benefit:last-child{
+    border-right:none;
+}
+
+.benefit:hover{
+    background:#fff;
+    transform:translateY(-2px);
+}
+
+.benefit-icon{
+    width:40px;
+    height:40px;
+
+    border:1.5px solid #392443;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+    transition:.4s ease;
+}
+
+.benefit:hover .benefit-icon{
+    transform:rotate(360deg);
+    background:#3b2546;
+    color:#fff;
+}
+
+.benefit h4{
+    font-size:11px;
+    font-weight:600;
+    margin-bottom:1px;
+}
+
+.benefit p{
+    font-size:8px;
+    color:#777;
+}
+
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial-section{
+    padding:18px 0 18px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:15px;
+
+    animation:fadeUp .8s ease;
+}
+
+.section-title h2{
+    font-family:'DM Serif Display',serif;
+    font-size:28px;
+    font-weight:400;
+    color:#33203e;
+}
+
+.section-title p{
+    font-size:18px;
+    color:#777;
+    margin-top:1px;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.review-card{
+    border:1px solid #e2dfe2;
+    border-radius:5px;
+
+    padding:11px 15px;
+
+    min-height:108px;
+
+    background:#fff;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    opacity:0;
+    transform:translateY(30px);
+}
+
+.review-card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.review-card:hover{
+    transform:translateY(-6px);
+    border-color:#c9b6d0;
+
+    box-shadow:
+        0 12px 30px rgba(54,30,65,.10);
+}
+
+.review-top{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.avatar{
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    background:linear-gradient(
+        135deg,
+        #eee,
+        #ddd
+    );
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.stars{
+    color:#e4a719;
+    font-size:18px;
+    letter-spacing:1px;
+    margin-bottom:3px;
+}
+
+.review-text{
+    font-size:12px;
+    color:#4d4d4d;
+    line-height:1.55;
+
+    margin-top:8px;
+}
+
+.customer{
+    margin-top:7px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.customer-location{
+    font-size:10px;
+    color:#777;
+    margin-top:1px;
+}
+
+/* =========================
+   COMMUNITY
+========================= */
+
+.community{
+    position:relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #684c72,
+            #795a83,
+            #67476e
+        );
+
+    min-height:98px;
+
+    overflow:hidden;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    margin-top:0;
+}
+
+.community-content{
+    position:relative;
+    z-index:2;
+}
+
+.community h2{
+    font-family:'DM Serif Display',serif;
+    font-weight:400;
+    font-size:25px;
+}
+
+.community p{
+    font-size:15px;
+    opacity:.85;
+    margin:2px 0 8px;
+}
+
+.subscribe{
+    display:flex;
+    width:450px;
+    height:40px;
+    margin:auto;
+
+    background:#fff;
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.subscribe:focus-within{
+    transform:scale(1.03);
+}
+
+.subscribe input{
+    flex:1;
+    min-width:0;
+
+    border:none;
+    outline:none;
+
+    padding:0 12px;
+
+    font-size:15px;
+    color:#444;
+}
+
+.subscribe button{
+    border:none;
+
+    width:100px;
+
+    background:#28192f;
+    color:#fff;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.subscribe button:hover{
+    background:#170e1b;
+}
+
+/* Floating crystals */
+
+.crystal{
+    position:absolute;
+    width:45px;
+    height:45px;
+
+    opacity:.25;
+
+    border:1px solid #fff;
+
+    transform:rotate(35deg);
+
+    animation:floatCrystal 4s ease-in-out infinite;
+}
+
+.crystal::before{
+    content:"";
+    position:absolute;
+    inset:8px;
+
+    border:1px solid #fff;
+
+    transform:rotate(45deg);
+}
+
+.crystal.one{
+    left:15%;
+    top:16px;
+}
+
+.crystal.two{
+    right:15%;
+    top:20px;
+    width:35px;
+    height:35px;
+
+    animation-delay:1s;
+}
+
+.crystal.three{
+    right:11%;
+    top:43px;
+    width:20px;
+    height:20px;
+
+    animation-delay:2s;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:
+        linear-gradient(
+            135deg,
+            #20142a,
+            #2b1936,
+            #1d1325
+        );
+
+    color:#fff;
+
+    padding:12px 0 8px;
+}
+
+.footer-container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.7fr
+        1fr
+        1fr
+        1.15fr;
+
+    gap:30px;
+}
+
+/* Logo */
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:7px;
+}
+
+.logo-icon{
+    font-size:30px;
+    line-height:1;
+}
+
+.footer-logo h2{
+    font-family:'DM Serif Display',serif;
+    font-size:23px;
+    font-weight:400;
+}
+
+.footer-logo span{
+    display:block;
+    font-size:12px;
+    color:#ddd;
+    letter-spacing:.5px;
+}
+
+.footer-about p{
+    font-size:10px;
+    line-height:1.7;
+
+    color:#d4ccd8;
+
+    max-width:280px;
+
+    margin-top:8px;
+}
+
+/* Social */
+
+.socials{
+    display:flex;
+    gap:13px;
+    margin-top:9px;
+}
+
+.socials a{
+    color:#fff;
+    text-decoration:none;
+
+    font-size:20px;
+
+    width:18px;
+    height:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    transition:.3s;
+}
+
+.socials a:hover{
+    background:#fff;
+    color:#28182f;
+    transform:translateY(-3px);
+}
+
+/* Footer columns */
+
+.footer-column h3{
+    font-size:15px;
+    font-weight:500;
+
+    margin-bottom:8px;
+}
+
+.footer-column ul{
+    list-style:none;
+}
+
+.footer-column li{
+    margin-bottom:5px;
+}
+
+.footer-column a{
+    color:#d2cbd6;
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#fff;
+    padding-left:4px;
+}
+
+/* Contact */
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#d2cbd6;
+
+    font-size:15px;
+
+    margin-bottom:7px;
+}
+
+.contact-icon{
+    width:15px;
+    text-align:center;
+    font-size:18px;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-bottom{
+    width:92%;
+    max-width:1180px;
+
+    margin:8px auto 0;
+
+    padding-top:7px;
+
+    border-top:1px solid rgba(255,255,255,.14);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    font-size:12px;
+
+    color:#bbb;
+}
+
+.footer-links{
+    display:flex;
+    gap:12px;
+}
+
+.footer-links a{
+    color:#bbb;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes floatCrystal{
+
+    0%,100%{
+        transform:
+            rotate(35deg)
+            translateY(0);
+    }
+
+    50%{
+        transform:
+            rotate(50deg)
+            translateY(-8px);
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:850px){
+
+    .benefits-box{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .benefit:nth-child(2){
+        border-right:none;
+    }
+
+    .benefit:nth-child(1),
+    .benefit:nth-child(2){
+        border-bottom:1px solid #ddd;
+    }
+
+    .reviews{
+        grid-template-columns:1fr;
+        max-width:600px;
+        margin:auto;
+    }
+
+    .review-card{
+        min-height:auto;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .benefits-section{
+        padding-top:10px;
+    }
+
+    .benefits-box{
+        width:94%;
+        grid-template-columns:1fr 1fr;
+    }
+
+    .benefit{
+        padding:10px;
+        gap:8px;
+    }
+
+    .benefit-icon{
+        width:34px;
+        height:34px;
+        font-size:14px;
+    }
+
+    .benefit h4{
+        font-size:9px;
+    }
+
+    .benefit p{
+        font-size:6.5px;
+    }
+
+    .section-title h2{
+        font-size:21px;
+    }
+
+    .section-title p{
+        font-size:8px;
+    }
+
+    .reviews{
+        width:94%;
+    }
+
+    .community{
+        min-height:105px;
+    }
+
+    .community h2{
+        font-size:18px;
+    }
+
+    .subscribe{
+        width:230px;
+    }
+
+    .crystal.one{
+        left:4%;
+    }
+
+    .crystal.two{
+        right:5%;
+    }
+
+    .crystal.three{
+        right:2%;
+    }
+
+    footer{
+        padding-top:25px;
+    }
+
+    .footer-container{
+        width:88%;
+        grid-template-columns:1fr 1fr;
+        gap:25px 15px;
+    }
+
+    .footer-about{
+        grid-column:1 / -1;
+    }
+
+    .footer-about p{
+        max-width:100%;
+    }
+
+    .footer-bottom{
+        width:88%;
+
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:8px;
+    }
+
+    .footer-links{
+        gap:8px;
+        flex-wrap:wrap;
+    }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:380px){
+
+    .benefits-box{
+        grid-template-columns:1fr;
+    }
+
+    .benefit{
+        border-right:none !important;
+        border-bottom:1px solid #ddd;
+    }
+
+    .benefit:last-child{
+        border-bottom:none;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-about{
+        grid-column:auto;
+    }
+
+    .footer-bottom{
+        font-size:6px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================
+     COMMUNITY
+===================================== -->
+
+<section class="community">
+
+
+    <div class="crystal one"></div>
+    <div class="crystal two"></div>
+    <div class="crystal three"></div>
+
+
+    <div class="community-content">
+        <br>
+        <br>
+
+        <h2>
+            Join Our Crystal Community
+        </h2>
+
+        <p>
+            Get exclusive offers, new arrivals and crystal tips straight to your inbox.
+        </p>
+
+<br>
+        <form
+            class="subscribe"
+            id="subscribeForm"
+        >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+<br>
+<br>
+<br>
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- ABOUT -->
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+
+                <div class="logo-icon">
+                    ♢
+                </div>
+
+                <div>
+
+                    <h2>
+                        Divinehealingworld
+                    </h2>
+
+                    <span>
+                        Nature's Energy. Your Style
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                At Divinehealingworld, we bring you fine natural
+                crystals and handcrafted jewellery to help you
+                connect with your inner peace and positive energy.
+            </p>
+
+
+            <div class="socials">
+
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    ◎
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    p
+                </a>
+
+                <a href="#" aria-label="Youtube">
+                    ▶
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- SHOP -->
+
+        <div class="footer-column">
+
+            <h3>
+               Our Services
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="reiki-healing.html">Reiki Healing</a>
+                </li>
+
+                <li>
+                    <a href="akashic-records.html">Akashic Records</a>
+                </li>
+
+                <li>
+                    <a href="animal-communication.html">Animal Communication</a>
+                </li>
+
+                <li>
+                    <a href="tarot-reading.html">Tarot Reading</a>
+                </li>
+
+                <li>
+                    <a href="home-energy.html">Home Energy</a>
+                </li>
+
+                <li>
+                    <a href="psychic-mediumShip.php_.html">Psychic MediumShip</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Contact Us
+            </h3>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ✉
+                </div>
+
+                support@Divinehealingworld.com
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                +91 9711766949
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ●
+                </div>
+
+                India
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="footer-bottom">
+
+        <div>
+            © 2026 Divinehealingworld. All rights reserved.
+        </div>
+          <div>
+    Developed By
+    <a
+        href="https://www.google.com/search?q=parvez3737"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="text-decoration: none; color: inherit;"
+    >
+        Parvez Ahmad (Parvez3737)
+    </a>
+</div>
+
+        <div class="footer-links">
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Shipping Policy
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+/* =====================================
+   SCROLL REVEAL
+===================================== */
+
+const cards = document.querySelectorAll(".review-card");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry, index) => {
+
+            if(entry.isIntersecting){
+
+                setTimeout(() => {
+
+                    entry.target.classList.add("show");
+
+                }, index * 180);
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+    {
+        threshold:0.15
+    }
+);
+
+
+cards.forEach(card => {
+
+    observer.observe(card);
+
+});
+
+
+/* =====================================
+   NEWSLETTER
+===================================== */
+
+const form = document.getElementById("subscribeForm");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    if(!email){
+        return;
+    }
+
+    const button =
+        form.querySelector("button");
+
+    const oldText =
+        button.textContent;
+
+    button.textContent = "Subscribed ✓";
+
+    button.style.background = "#493052";
+
+    setTimeout(() => {
+
+        button.textContent = oldText;
+
+        button.style.background = "";
+
+        form.reset();
+
+    }, 2500);
+
+});
+
+
+/* =====================================
+   MOUSE PARALLAX CRYSTALS
+===================================== */
+
+const crystals =
+    document.querySelectorAll(".crystal");
+
+document.addEventListener("mousemove", function(e){
+
+    const x =
+        (window.innerWidth / 2 - e.clientX) / 60;
+
+    const y =
+        (window.innerHeight / 2 - e.clientY) / 60;
+
+    crystals.forEach((crystal, index) => {
+
+        const amount =
+            (index + 1) * 0.6;
+
+        crystal.style.marginLeft =
+            `${x * amount}px`;
+
+        crystal.style.marginTop =
+            `${y * amount}px`;
+
+    });
+
+});
+
+
+/* =====================================
+   REVIEW CARD HOVER
+===================================== */
+
+cards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+
+        card.style.zIndex = "5";
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.zIndex = "";
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+# Netscape HTTP Cookie File
+# Written by HTTrack Website Copier
+divinehealingworld.com	FALSE	/	TRUE	0	PHPSESSID	d8dpkbcq5nguf4ee4an2vg1m9o

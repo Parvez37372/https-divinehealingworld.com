@@ -1,0 +1,978 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from https://divinehealingworld.com/register.php by HTTrack Website Copier/3.x [XR&CO], Wed, 25 Nov 2026 08:05:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Create Account | Divine Healing World</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            font-family:
+                "Segoe UI",
+                Arial,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #faf7ff,
+                    #f5efff,
+                    #ffffff
+                );
+
+            color: #29212f;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .register-page {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 30px 18px;
+        }
+
+
+        /* =====================================================
+           CONTAINER
+        ===================================================== */
+
+        .register-container {
+
+            width: 100%;
+
+            max-width: 1050px;
+
+            min-height: 650px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            background: #fff;
+
+            border-radius: 28px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 25px 70px rgba(78, 45, 112, .15);
+        }
+
+
+        /* =====================================================
+           LEFT
+        ===================================================== */
+
+        .register-left {
+
+            padding: 55px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            color: #fff;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(255,255,255,.20),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 90% 80%,
+                    rgba(255,255,255,.15),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    #6d3fa9,
+                    #8f61c9,
+                    #b07cdb
+                );
+        }
+
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+        }
+
+
+        .brand-icon {
+
+            width: 48px;
+            height: 48px;
+
+            border-radius: 15px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: rgba(255,255,255,.18);
+
+            border:
+                1px solid
+                rgba(255,255,255,.25);
+
+            font-size: 24px;
+        }
+
+
+        .brand-name {
+
+            font-size: 20px;
+
+            font-weight: 700;
+        }
+
+
+        .left-content {
+
+            max-width: 420px;
+        }
+
+
+        .tag {
+
+            display: inline-block;
+
+            padding: 7px 13px;
+
+            border-radius: 30px;
+
+            background:
+                rgba(255,255,255,.14);
+
+            border:
+                1px solid
+                rgba(255,255,255,.18);
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            letter-spacing: .5px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .left-content h1 {
+
+            font-size: 45px;
+
+            line-height: 1.15;
+
+            margin-bottom: 20px;
+        }
+
+
+        .left-content p {
+
+            color:
+                rgba(255,255,255,.86);
+
+            font-size: 15px;
+
+            line-height: 1.8;
+        }
+
+
+        .benefits {
+
+            margin-top: 30px;
+        }
+
+
+        .benefit {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 14px;
+
+            font-size: 13px;
+
+            color:
+                rgba(255,255,255,.9);
+        }
+
+
+        .check {
+
+            width: 24px;
+            height: 24px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+                rgba(255,255,255,.16);
+
+            font-size: 12px;
+        }
+
+
+        .left-footer {
+
+            color:
+                rgba(255,255,255,.6);
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           RIGHT
+        ===================================================== */
+
+        .register-right {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 55px;
+        }
+
+
+        .register-form {
+
+            width: 100%;
+
+            max-width: 390px;
+        }
+
+
+        .heading {
+
+            margin-bottom: 28px;
+        }
+
+
+        .heading h2 {
+
+            font-size: 31px;
+
+            margin-bottom: 8px;
+
+            color: #251d2e;
+        }
+
+
+        .heading p {
+
+            color: #817887;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           MESSAGES
+        ===================================================== */
+
+        .error {
+
+            padding: 13px 15px;
+
+            border-radius: 12px;
+
+            background: #fff1f1;
+
+            border:
+                1px solid
+                #ffd5d5;
+
+            color: #c62828;
+
+            font-size: 13px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .success {
+
+            padding: 13px 15px;
+
+            border-radius: 12px;
+
+            background: #effbf3;
+
+            border:
+                1px solid
+                #ccefd8;
+
+            color: #217a3d;
+
+            font-size: 13px;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* =====================================================
+           FORM
+        ===================================================== */
+
+        .form-group {
+
+            margin-bottom: 17px;
+        }
+
+
+        .form-group label {
+
+            display: block;
+
+            margin-bottom: 7px;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            color: #3d3445;
+        }
+
+
+        .input-box {
+
+            position: relative;
+        }
+
+
+        .input-icon {
+
+            position: absolute;
+
+            left: 15px;
+
+            top: 50%;
+
+            transform:
+                translateY(-50%);
+
+            color: #9a8ca6;
+
+            pointer-events: none;
+        }
+
+
+        .form-control {
+
+            width: 100%;
+
+            height: 51px;
+
+            padding:
+                0 15px 0 44px;
+
+            border:
+                1px solid
+                #e3dce8;
+
+            border-radius: 12px;
+
+            outline: none;
+
+            font-size: 14px;
+
+            transition: .2s;
+        }
+
+
+        .form-control:focus {
+
+            border-color: #8a59bd;
+
+            box-shadow:
+                0 0 0 4px
+                rgba(138,89,189,.10);
+        }
+
+
+        .password-input {
+
+            padding-right: 60px;
+        }
+
+
+        .toggle {
+
+            position: absolute;
+
+            right: 13px;
+
+            top: 50%;
+
+            transform:
+                translateY(-50%);
+
+            border: 0;
+
+            background: transparent;
+
+            color: #76558e;
+
+            cursor: pointer;
+
+            font-size: 12px;
+
+            font-weight: 600;
+        }
+
+
+        /* =====================================================
+           BUTTON
+        ===================================================== */
+
+        .register-button {
+
+            width: 100%;
+
+            height: 53px;
+
+            border: 0;
+
+            border-radius: 12px;
+
+            margin-top: 5px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6e3fa6,
+                    #9865ca
+                );
+
+            color: #fff;
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 10px 22px
+                rgba(112,62,165,.22);
+
+            transition: .2s;
+        }
+
+
+        .register-button:hover {
+
+            transform:
+                translateY(-1px);
+
+            box-shadow:
+                0 14px 28px
+                rgba(112,62,165,.28);
+        }
+
+
+        /* =====================================================
+           LOGIN
+        ===================================================== */
+
+        .login-link {
+
+            text-align: center;
+
+            margin-top: 24px;
+
+            color: #817887;
+
+            font-size: 13px;
+        }
+
+
+        .login-link a {
+
+            color: #7042a3;
+
+            font-weight: 700;
+
+            text-decoration: none;
+
+            margin-left: 4px;
+        }
+
+
+        .login-link a:hover {
+
+            text-decoration: underline;
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 800px) {
+
+            .register-container {
+
+                grid-template-columns: 1fr;
+
+                max-width: 500px;
+
+                min-height: auto;
+            }
+
+
+            .register-left {
+
+                min-height: 310px;
+
+                padding: 35px;
+            }
+
+
+            .left-content {
+
+                margin-top: 35px;
+            }
+
+
+            .left-content h1 {
+
+                font-size: 34px;
+            }
+
+
+            .register-right {
+
+                padding: 40px 30px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+
+            .register-page {
+
+                padding: 0;
+            }
+
+
+            .register-container {
+
+                border-radius: 0;
+
+                min-height: 100vh;
+            }
+
+
+            .register-left {
+
+                min-height: 280px;
+
+                padding: 28px 22px;
+            }
+
+
+            .left-content h1 {
+
+                font-size: 29px;
+            }
+
+
+            .benefits {
+
+                display: none;
+            }
+
+
+            .register-right {
+
+                padding: 35px 22px;
+            }
+
+
+            .heading h2 {
+
+                font-size: 27px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="register-page">
+
+    <div class="register-container">
+
+
+        <!-- =====================================================
+             LEFT PANEL
+        ====================================================== -->
+
+        <div class="register-left">
+
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    ✦
+                </div>
+
+                <div class="brand-name">
+                    Divine Healing World
+                </div>
+
+            </div>
+
+
+            <div class="left-content">
+
+                <span class="tag">
+                    JOIN OUR COMMUNITY
+                </span>
+
+
+                <h1>
+                    Begin your
+                    journey with us.
+                </h1>
+
+
+                <p>
+                    Create your account and discover a
+                    beautiful collection of healing products
+                    made to bring positivity into your journey.
+                </p>
+
+
+                <div class="benefits">
+
+                    <div class="benefit">
+
+                        <span class="check">
+                            ✓
+                        </span>
+
+                        Easy and secure account
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <span class="check">
+                            ✓
+                        </span>
+
+                        Explore our healing collection
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <span class="check">
+                            ✓
+                        </span>
+
+                        Manage your orders easily
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="left-footer">
+
+                © 2026 Divine Healing World
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             RIGHT PANEL
+        ====================================================== -->
+
+        <div class="register-right">
+
+            <div class="register-form">
+
+
+                <div class="heading">
+
+                    <h2>
+                        Create account
+                    </h2>
+
+                    <p>
+                        Enter your details to get started.
+                    </p>
+
+                </div>
+
+
+                
+
+                
+
+                <form
+                    method="POST"
+                    action="#"
+                >
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="input-icon">
+                                👤
+                            </span>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-control"
+                                value=""
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="input-icon">
+                                ✉
+                            </span>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-control"
+                                value=""
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="input-icon">
+                                🔒
+                            </span>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="form-control password-input"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="toggle"
+                                onclick="togglePassword('password', this)"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="confirm_password">
+                            Confirm Password
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="input-icon">
+                                🔒
+                            </span>
+
+                            <input
+                                type="password"
+                                id="confirm_password"
+                                name="confirm_password"
+                                class="form-control password-input"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="toggle"
+                                onclick="togglePassword('confirm_password', this)"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="register-button"
+                    >
+                        Create Account
+                    </button>
+
+
+                </form>
+
+
+                <div class="login-link">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Sign in
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function togglePassword(id, button) {
+
+    const input = document.getElementById(id);
+
+    if (input.type === "password") {
+
+        input.type = "text";
+
+        button.textContent = "Hide";
+
+    } else {
+
+        input.type = "password";
+
+        button.textContent = "Show";
+    }
+}
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from https://divinehealingworld.com/register.php by HTTrack Website Copier/3.x [XR&CO], Wed, 25 Nov 2026 08:05:29 GMT -->
+</html>
+```
